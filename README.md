@@ -4,9 +4,9 @@
 
 ### Google Maps
  
-* 	geocode\gmap-rjs
-	- 	uses requirejs with an async plugin to load the google maps api, no key required.
-	- 	dragging the marker to a location in the map retrieve location data and sets values in text inputs. 
+* 	geocode\gmap-rjs  
+	uses requirejs with an async plugin to load the google maps api, no key required.  
+	dragging the marker to a location in the map retrieves location data and sets values in text inputs.   
 ```
 # installs requirejs async plugin
 $ bower install
