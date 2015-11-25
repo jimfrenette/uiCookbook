@@ -4,13 +4,18 @@ define(['jquery','async!http://maps.googleapis.com/maps/api/js'],
             init: function gpac(lat, lng, callback) {
 
                 var addrComponents = {
-                  street_number: 'short_name',
-                  route: 'long_name',
-                  establishment: 'long_name',
-                  locality: 'long_name',
-                  administrative_area_level_1: 'short_name',
-                  country: 'short_name',
-                  postal_code: 'short_name'
+                    street_number: 'short_name',
+                    route: 'long_name',
+                    establishment: 'long_name',
+                    locality: 'long_name',
+                    administrative_area_level_1: 'short_name',
+                    country: 'short_name',
+                    postal_code: 'short_name'
+                };
+                var result = {
+                    address: {},
+                    latitude: 0,
+                    longitude: 0
                 };
                 var map = new google.maps.Map(document.getElementById('map-canvas'), {zoom: 10});
                 var geocoder = new google.maps.Geocoder;
@@ -23,19 +28,9 @@ define(['jquery','async!http://maps.googleapis.com/maps/api/js'],
                 map.setCenter(marker.position);
                 marker.setMap(map);
 
-                var result = {
-                    address: {},
-                    latitude: 0,
-                    longitude: 0
-                };
-
                 google.maps.event.addListener(marker, 'dragend', function (evt) {
-                    geocodeLatLng(geocoder, map, evt.latLng.lat(), evt.latLng.lng());
-                });
 
-                function geocodeLatLng(geocoder, map, lat, lng) {
-
-                    var latlng = {lat: lat, lng: lng};
+                    var latlng = {lat: evt.latLng.lat(), lng: evt.latLng.lng()};
 
                     geocoder.geocode({'location': latlng}, function(results, status) {
                         if (status === google.maps.GeocoderStatus.OK) {
@@ -61,7 +56,7 @@ define(['jquery','async!http://maps.googleapis.com/maps/api/js'],
                             window.alert('Geocoder failed due to: ' + status);
                         }
                     });
-                };
+                });
 
             }
         };
