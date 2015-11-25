@@ -18,7 +18,7 @@ define(['jquery','async!http://maps.googleapis.com/maps/api/js'],
                     longitude: 0
                 };
                 var map = new google.maps.Map(document.getElementById('map-canvas'), {zoom: 10});
-                var geocoder = new google.maps.Geocoder;
+                var geocoder = new google.maps.Geocoder();
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(lat, lng),
                     anchorPoint: new google.maps.Point(0, -29),
