@@ -1,0 +1,21 @@
+{
+  "name": "gmap-rjs",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jimfrenette/uiCookbook",
+  "authors": [
+    "jimfrenette <jimfrenette@yahoo.com>"
+  ],
+  "description": "google maps api requirejs module",
+  "main": "main.js",
+  "license": "GPLv3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs-plugins": "~1.0.3"
+  }
+}

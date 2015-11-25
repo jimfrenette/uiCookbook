@@ -1,0 +1,14 @@
+label {
+	display: block;
+	width: 300px;
+	margin-bottom: 1em;
+}
+input[type='text'] {
+	display: block;
+	width: 100%;
+}
+#map-canvas {
+	width: 300px;
+	height: 300px;
+	margin-bottom: 1em;
+}

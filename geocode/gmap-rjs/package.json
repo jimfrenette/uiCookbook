@@ -1,0 +1,15 @@
+{
+  "name": "gmap-rjs",
+  "version": "0.0.1",
+  "description": "google maps api requirejs module",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Frenette",
+  "license": "GPLv3",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "requirejs": "^2.1.20"
+  }
+}
