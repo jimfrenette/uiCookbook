@@ -26,7 +26,7 @@ define(['jquery','modules/gmap'],
                     if (address.country) {
                         $('#country').val(address.country);
                     }
-                }
+                };
             
             gmap.init(
                 latitude,
