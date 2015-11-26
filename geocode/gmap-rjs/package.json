@@ -9,6 +9,7 @@
   "author": "Jim Frenette",
   "license": "GPLv3",
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "requirejs": "^2.1.20"
   }
