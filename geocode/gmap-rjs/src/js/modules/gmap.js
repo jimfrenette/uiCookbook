@@ -1,5 +1,5 @@
-define(['jquery','async!http://maps.googleapis.com/maps/api/js'],
-    function($, async){
+define(['async!http://maps.googleapis.com/maps/api/js'],
+    function(async){
         return {
             init: function gpac(lat, lng, callback) {
 
@@ -31,7 +31,7 @@ define(['jquery','async!http://maps.googleapis.com/maps/api/js'],
                 google.maps.event.addListener(marker, 'dragend', function (evt) {
 
                     var latlng = {lat: evt.latLng.lat(), lng: evt.latLng.lng()};
-
+                    
                     geocoder.geocode({'location': latlng}, function(results, status) {
                         if (status === google.maps.GeocoderStatus.OK) {
                             if (results[0]) {
@@ -43,8 +43,8 @@ define(['jquery','async!http://maps.googleapis.com/maps/api/js'],
                                         result.address[type] = results[0].address_components[i][addrComponents[type]];
                                     }
                                 }
-                                result.latitude = lat;
-                                result.longitude = lng;
+                                result.latitude = latlng.lat;
+                                result.longitude = latlng.lng;
                                 if(typeof callback == "function"){
                                     callback(result);
                                 }

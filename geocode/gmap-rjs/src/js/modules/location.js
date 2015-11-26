@@ -3,8 +3,8 @@ define(['jquery','modules/gmap'],
         var location = function(){
             
             // default map coordinates
-            var latitude = 38.7916,
-	            longitude = -77.3120238;
+            var latitude = 39.084014922903,
+	            longitude = -77.51372591791;
                 
                 _setAddress = function(address) {
                     var street = [];
