@@ -19,5 +19,8 @@ $ gulp copy
 
 # requirejs optimization from /src/js into /js
 $ node node_modules/requirejs/bin/r.js -o require.build.js
+
+# run
+$ gulp server
 ```
 
