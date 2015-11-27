@@ -4,7 +4,7 @@
 
 ### Google Maps
  
-* 	geocode\gmap-rjs  
+* 	geocode\[gmap-rjs](http://jimfrenette.com/2015/11/googlemap-requirejs/)  
 	uses requirejs with an async plugin to load the google maps api, no key required.  
 	dragging the marker to a location in the map retrieves location data and sets values in text inputs.   
 ```
