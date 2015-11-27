@@ -1,6 +1,6 @@
 'use strict';
 
-// since jQuery is alreday loaded by Joomla
+// since jQuery is already loaded
 define('jquery', [], function() {
     return jQuery;
 });
