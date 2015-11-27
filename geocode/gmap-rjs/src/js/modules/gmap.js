@@ -1,7 +1,7 @@
 define(['async!http://maps.googleapis.com/maps/api/js'],
     function(async){
         return {
-            init: function gpac(lat, lng, callback) {
+            init: function gmap(lat, lng, callback) {
 
                 var addrComponents = {
                     street_number: 'short_name',
