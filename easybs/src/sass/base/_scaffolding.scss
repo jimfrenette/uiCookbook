@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, button {
+    color: $text-color;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: $font-family-base;
+    font-weight: $font-weight-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    -ms-text-size-adjust: none;
+    margin: 0;
+    padding: 0;
+}
+
+::-moz-selection {
+    background: $text-selection-bg-color;
+    text-shadow: none;
+}
+
+::selection {
+    background: $text-selection-bg-color;
+    text-shadow: none;
+}
+
+// Links
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover, &:focus {
+        color: $link-hover-color;
+        text-decoration: underline;
+    }
+}
+
+img {
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+    max-width: 100%;
+}
