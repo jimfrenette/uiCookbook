@@ -2,7 +2,7 @@
 
 ## Easy Browsersync Server
 
-*   [/easybs/README.md](/easybs/README.md)
+*   [/easybs](/easybs)
   
     An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
 
@@ -15,7 +15,7 @@
 	uses requirejs with an async plugin to load the google maps api, no key required.  
 	dragging the marker to a location in the map retrieves location data and sets values in text inputs.
 	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")
-    
+
 ```
 # installs requirejs, requirejs optimizer, gulp and browsersync
 $ npm install
