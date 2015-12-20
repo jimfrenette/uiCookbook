@@ -15,7 +15,7 @@ This code includes an HTML 5 Template with a NPM package config to install a min
 npm install
 ```
 
-5. Run gulp server to load the index.html file in a web browser 
+- Finally, run gulp server to load the index.html file in a web browser 
 
 ```
 gulp server

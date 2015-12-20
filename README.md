@@ -1,5 +1,10 @@
 # uiCookbook
 
+** Easy Browsersync Server
+
+*   [/easybs/README.md](/blob/master/easybs/README.md) 
+    An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
+
 ## Geocode
 
 ### Google Maps
