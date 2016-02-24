@@ -1,4 +1,5 @@
 'use strict';
+
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
@@ -24,8 +25,8 @@ gulp.task('server', ['sass'], function() {
         }
     });
 
-    gulp.watch(src.scss, ['sass']);
-    gulp.watch(src.html).on('change', reload);
+    gulp.watch(path.scss, ['sass']);
+    gulp.watch(path.html).on('change', reload);
 });
 
 // Compile sass into css
