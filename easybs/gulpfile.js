@@ -1,8 +1,10 @@
 'use strict';
 
-var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
+var gulp        = require('gulp'),
+    browserSync = require('browser-sync').create(),
+    rename      = require("gulp-rename"),
+    sass        = require('gulp-sass');
+
 var reload      = browserSync.reload;
 
 var path = {
@@ -14,6 +16,16 @@ var path = {
         js:  'js'
     }
 };
+
+gulp.task('cp-normalize', function() {
+    gulp.src([
+        './node_modules/normalize.scss/normalize.scss'
+        ])
+        .pipe(rename('_normalize.scss'))
+        .pipe(gulp.dest('./src/sass/base/'));
+});
+// copy vendor libraries into app
+gulp.task('cp', ['cp-normalize']);
 
 // BrowserSync static server + watching scss and html files
 gulp.task('server', ['sass'], function() {
@@ -37,4 +49,4 @@ gulp.task('sass', function() {
         .pipe(reload({stream: true}));
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['server']);

@@ -23,6 +23,15 @@ gulp server
 
 The gulp server task is configured so that any edits to the html are reloaded in the browser instantly. Any edits to scss files are processed into the css file and injected instantly into the browser.
 
+If you wish to include [normalize.scss](https://github.com/guerrero/normalize.scss) in your sass build, run this task:
+
+```
+gulp cp
+```
+
+Then uncomment the normalize import statement at the top of /src/sass/base/_base.scss
+
+
 Additional reading:
 
 - [browsersync.io](http://www.browsersync.io/ "browsersync.io")
