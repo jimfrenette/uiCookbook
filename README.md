@@ -1,18 +1,20 @@
 # uiCookbook
 
-## Easy Browsersync Server
+## Easy Web Server
 
 *   [/easybs](/easybs)
-  
-    An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
+
+    An HTML 5 Template with a NPM package config to install a minimal set of development tools including a web server and Gulp task runner.
+    NOTE - this web server is in the [gulp-webserver branch](https://github.com/jimfrenette/uiCookbook/tree/gulp-webserver) -
+    [master](https://github.com/jimfrenette/uiCookbook/tree/master) contains the Easy Browser-sync server.
 
 ### Geocode
 
 ### Google Maps
- 
+
 * 	[/geocode/gmap-rjs](/geocode/gmap-rjs)
-   
-	uses requirejs with an async plugin to load the google maps api, no key required.  
+
+	uses requirejs with an async plugin to load the google maps api, no key required.
 	dragging the marker to a location in the map retrieves location data and sets values in text inputs.
 	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")
 
