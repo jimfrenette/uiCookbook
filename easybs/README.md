@@ -1,11 +1,13 @@
-# Easy Browsersync Server
+# Easy Web Server
 
-This code includes an HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner. A gulp server command loads the html 5 template in a browser using Browsersync. Any edits made to the html or sass (scss) files are processed instantly and reloaded into the browser. Website: http://jimfrenette.com/html5-template/
+This code includes an HTML 5 Template with a NPM package config to install a minimal set of development tools including a web server and Gulp task runner. A gulp server command loads the html 5 template in a browser using Browsersync. Any edits made to the html or sass (scss) files are processed instantly and reloaded into the browser. Website: http://jimfrenette.com/html5-template/
 
 
 1. Requires [Node.js](https://nodejs.org "Node.js")
 
-2. Download or clone this repsoitory.
+2. Navigate to the [gulp-webserver branch](https://github.com/jimfrenette/uiCookbook/tree/gulp-webserver)
+
+3. Download or clone this repsoitory and checkout the gulp-webserver branch.
 
 3. Change directory to /uiCookbook/easybs
 
@@ -15,7 +17,7 @@ This code includes an HTML 5 Template with a NPM package config to install a min
 npm install
 ```
 
-- Finally, run gulp server to load the index.html file in a web browser 
+- Finally, run gulp server to load the index.html file in a web browser
 
 ```
 gulp server
@@ -34,6 +36,6 @@ Then uncomment the normalize import statement at the top of /src/sass/base/_base
 
 Additional reading:
 
-- [browsersync.io](http://www.browsersync.io/ "browsersync.io")
+- [npm gulp-webserver](https://www.npmjs.com/package/gulp-webserver "npm gulp-webserver")
 - [gulpjs.com/](http://gulpjs.com/ "gulpjs.com/")
 - [sass-lang.com/](http://sass-lang.com/ "sass-lang.com/")
