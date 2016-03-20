@@ -1,11 +1,9 @@
 'use strict';
 
 var gulp        = require('gulp'),
-    browserSync = require('browser-sync').create(),
     rename      = require("gulp-rename"),
-    sass        = require('gulp-sass');
-
-var reload      = browserSync.reload;
+    sass        = require('gulp-sass'),
+    webserver   = require('gulp-webserver');
 
 var path = {
     html: './**/*.html',
@@ -27,26 +25,25 @@ gulp.task('cp-normalize', function() {
 // copy vendor libraries into app
 gulp.task('cp', ['cp-normalize']);
 
-// BrowserSync static server + watching scss and html files
-gulp.task('server', ['sass'], function() {
-    browserSync.init({
-        server: {
-            baseDir: './',
-            directory: false,
-            index: 'index.html'
-        }
-    });
+// static web server w/ livereload
+gulp.task('server', function() {
+    gulp.src('./')
+        .pipe(webserver({
+            livereload: true,
+            directoryListing: false,
+            open: true
+        }));
+});
 
+gulp.task('watch', function(){
     gulp.watch(path.scss, ['sass']);
-    gulp.watch(path.html).on('change', reload);
 });
 
 // Compile sass into css
 gulp.task('sass', function() {
     return gulp.src(path.scss)
         .pipe(sass())
-        .pipe(gulp.dest(path.dist.css))
-        .pipe(reload({stream: true}));
+        .pipe(gulp.dest(path.dist.css));
 });
 
-gulp.task('default', ['server']);
+gulp.task('default', ['server', 'watch']);

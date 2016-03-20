@@ -1,7 +1,7 @@
 {
-  "name": "easybs",
+  "name": "easyws",
   "version": "1.0.0",
-  "description": "Easy Browsersync Server",
+  "description": "Easy Web Server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,10 @@
   "homepage": "http://jimfrenette.com/html5-template/",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.10.1",
     "gulp": "^3.9.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
+    "gulp-webserver": "^0.9.1",
     "normalize.scss": "^0.1.0"
   }
 }
