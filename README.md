@@ -1,13 +1,10 @@
 # uiCookbook
 
-## Easy Web Server
+## Easy Browsersync Server
 
 *   [/easybs](/easybs)
 
-    An HTML 5 Template with a NPM package config to install a minimal set of development tools including a web server and Gulp task runner.
-    NOTE: this web server is in the [gulp-webserver branch](https://github.com/jimfrenette/uiCookbook/tree/gulp-webserver) -
-    [master](https://github.com/jimfrenette/uiCookbook/tree/master) contains the Easy Browsersync server.
-
+    An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
 
 ### Geocode
 
