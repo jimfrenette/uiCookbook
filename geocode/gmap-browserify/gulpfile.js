@@ -4,23 +4,12 @@ var gulp        = require('gulp'),
     browserify  = require('browserify'),
     buffer      = require('vinyl-buffer'),
     gutil       = require('gulp-util'),
-    sass        = require('gulp-sass'),
     source      = require('vinyl-source-stream'),
     sourcemaps  = require('gulp-sourcemaps'),
     uglify      = require('gulp-uglify'),
     webserver   = require('gulp-webserver');
 
-var path = {
-    html: './**/*.html',
-    scss: './src/sass/**/*.scss',
-    js:   './src/js/**/*.js',
-    dist: {
-        css: './css',
-        js:  './js/'
-    }
-};
-
-gulp.task('js', function () {
+gulp.task('bundle', function () {
   var b = browserify({
     entries: './src/js/index.js',
     debug: true
@@ -46,15 +35,4 @@ gulp.task('server', function() {
         }));
 });
 
-gulp.task('watch', function(){
-    gulp.watch(path.scss, ['sass']);
-});
-
-// Compile sass into css
-gulp.task('sass', function() {
-    return gulp.src(path.scss)
-        .pipe(sass())
-        .pipe(gulp.dest(path.dist.css));
-});
-
-gulp.task('default', ['server', 'watch']);
+gulp.task('default', ['bundle','server']);
