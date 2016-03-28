@@ -8,7 +8,7 @@
 
 ### Sass and cssnano
 
-*	[/cssnano](/cssnano)
+*	[/sass-cssnano](/sass-cssnano)
 
 	Sass Workflow Using cssnano and Autoprefixer
 	[more info](http://jimfrenette.com/2016/02/sass-cssnano-autoprefixer/ "Blog post")
