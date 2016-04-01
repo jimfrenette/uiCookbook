@@ -6,9 +6,28 @@
 
     An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
 
-### Geocode
+### Sass and cssnano
 
-### Google Maps
+*	[/sass-cssnano](/sass-cssnano)
+
+	Sass Workflow Using cssnano and Autoprefixer
+	[more info](http://jimfrenette.com/2016/02/sass-cssnano-autoprefixer/ "Blog post")
+
+
+### Google Maps API
+
+* 	[/geocode/gmap-browserify](/geocode/gmap-browserify)
+
+	uses local javascript modules with Browserify and the google maps api, no key required. Same functionality as the requirejs version below. [more info](http://jimfrenette.com/2016/03/google-maps-api-with-browserify/ "Blog post")
+
+```
+# installs browserify, browserify-shim, gulp, gulp-sourcemaps, gulp-uglify, gulp-util, gulp-webserver, vinyl-buffer, vinyl-source-stream
+$ npm install
+
+# run bundle and server
+$ gulp
+```
+
 
 * 	[/geocode/gmap-rjs](/geocode/gmap-rjs)
 
