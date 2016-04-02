@@ -1,4 +1,4 @@
-define(['async!http://maps.googleapis.com/maps/api/js'],
+define(['async!//maps.googleapis.com/maps/api/js'],
     function(async){
     var gmap = {
         map: {},
