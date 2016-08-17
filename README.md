@@ -6,7 +6,13 @@
 
     An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
 
-### Sass and cssnano
+## Handlebars with Browserify
+
+*   [/hb-browserify](/hb-browserify)
+
+	This code uses the [hbsfy](https://github.com/epeli/node-hbsfy) precompiler plugin for Browserify to compile [Handlebars](http://handlebarsjs.com/) templates into javascript.
+
+## Sass and cssnano
 
 *	[/sass-cssnano](/sass-cssnano)
 
@@ -14,7 +20,7 @@
 	[more info](http://jimfrenette.com/2016/02/sass-cssnano-autoprefixer/ "Blog post")
 
 
-### Google Maps API
+## Google Maps API
 
 * 	[/geocode/gmap-browserify](/geocode/gmap-browserify)
 
