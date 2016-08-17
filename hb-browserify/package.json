@@ -1,0 +1,23 @@
+{
+  "name": "hb-browserify",
+  "version": "1.0.0",
+  "description": "handlebars templates example with browserify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jim Frenette",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-webserver": "^0.9.1",
+    "handlebars": "^4.0.5",
+    "hbsfy": "^2.7.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
