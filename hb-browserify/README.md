@@ -8,7 +8,7 @@ This code uses the [hbsfy](https://github.com/epeli/node-hbsfy) precompiler plug
 
 3. Change directory to /uiCookbook/hb-browserify
 
-4. Run npm install from a bash terminal or command prompt. This will read the package.json file and install the dependencies into the easybs project folder.
+4. Run npm install from a bash terminal or command prompt. This will read the package.json file and install the dependencies into the hb-browserify project folder.
 
 ```
 npm install
@@ -22,5 +22,6 @@ gulp server
 
 Additional reading:
 
+- [jimfrenette.com](http://jimfrenette.com/2016/08/handlebars-templates-browserify/ "jimfrenette.com")
 - [browserify.org](http://browserify.org/ "browserify.org")
 - [handlebarsjs.com](http://handlebarsjs.com/ "handlebarsjs.com")
