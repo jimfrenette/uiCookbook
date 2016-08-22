@@ -1,7 +1,7 @@
 var data = require('./modules/data');
 var list = require('../hbs/people.hbs');
 
-var Handlebars = require("hbsfy/runtime");
+var Handlebars = require('hbsfy/runtime');
 
 var compare = require('./modules/hb-helpers/compare');
 
