@@ -24,7 +24,8 @@
 
 * 	[/geocode/gmap-webpack](/geocode/gmap-webpack)
 
-	converted for webpack module bundler
+	Browserify version converted for the Webpack module bundler
+    [more info](http://jimfrenette.com/2017/03/google-maps-api-with-webpack/ "Blog post")
 
 ```
 $ npm install
