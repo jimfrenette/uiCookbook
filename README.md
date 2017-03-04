@@ -22,6 +22,21 @@
 
 ## Google Maps API
 
+* 	[/geocode/gmap-webpack](/geocode/gmap-webpack)
+
+	converted for webpack module bundler
+
+```
+$ npm install
+
+# develop with webpack-dev-server
+$ npm start
+
+# build for production
+$ npm run build
+```
+
+
 * 	[/geocode/gmap-browserify](/geocode/gmap-browserify)
 
 	uses local javascript modules with Browserify and the google maps api, no key required. Same functionality as the requirejs version below. [more info](http://jimfrenette.com/2016/03/google-maps-api-with-browserify/ "Blog post")
