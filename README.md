@@ -22,6 +22,12 @@
 
 ## Google Maps API
 
+> location inputs populated by google maps api when the marker is repositioned.
+
+* 	[/geocode/gmapvue](/geocode/gmap-vue)
+
+	Vue and Webpack version
+
 * 	[/geocode/gmap-webpack](/geocode/gmap-webpack)
 
 	Browserify version converted for the Webpack module bundler
