@@ -1,18 +1,18 @@
-exports.init = function (lat, lng, callback) {
-    var geocoder = new google.maps.Geocoder();
-    var marker = new google.maps.Marker({
+export default function(lat, lng, callback) {
+    var geocoder = new google.maps.Geocoder(),
+        marker = new google.maps.Marker({
         position: new google.maps.LatLng(lat, lng),
         anchorPoint: new google.maps.Point(0, -29),
-        draggable: true
-    });
-    map = new google.maps.Map(document.getElementById('map-canvas'), {zoom: 10});
+        draggable: true }),
+        map = new google.maps.Map(document.getElementById('map-canvas'), {zoom: 10});
+
     map.setCenter(marker.position);
     marker.setMap(map);
 
     google.maps.event.addListener(marker, 'dragend', function (evt) {
 
-        var latlng = {lat: evt.latLng.lat(), lng: evt.latLng.lng()};
-        var addrComponents = {
+        let latlng = {lat: evt.latLng.lat(), lng: evt.latLng.lng()};
+        let addrComponents = {
             street_number: 'short_name',
             route: 'long_name',
             establishment: 'long_name',
@@ -21,7 +21,7 @@ exports.init = function (lat, lng, callback) {
             country: 'short_name',
             postal_code: 'short_name'
         };
-        result = {
+        let result = {
             address: {},
             latitude: 0,
             longitude: 0
@@ -52,4 +52,4 @@ exports.init = function (lat, lng, callback) {
             }
         });
     });
-}
+};

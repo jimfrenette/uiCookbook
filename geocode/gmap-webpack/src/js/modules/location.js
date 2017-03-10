@@ -1,43 +1,32 @@
-var gmap = require('./gmap');
+import gmap from './gmap';
+import address from './address';
 
-var latitude = 39.084014922903;
-var longitude = -77.51372591791;
+var location = {
 
-exports.init = function () {
-    gmap.init(
+  init: function() {
+    const latitude = 39.084014922903;
+    const longitude = -77.51372591791;
+
+    gmap(
         latitude,
         longitude,
-        function(result){
+        function(result) {
+
+            let latitudeInput = document.getElementById('latitude');
+            let longitudeInput = document.getElementById('longitude');
+
             console.log('RESULT',result);
 
             if (result.address) {
-                _setAddress(result.address);
+                address(result.address);
             }
 
-            $('#latitude').val(result.latitude);
-            $('#longitude').val(result.longitude);
+            latitudeInput.value = result.latitude;
+            longitudeInput.value = result.longitude;
         }
     );
+  }
+
 };
 
-_setAddress = function(address) {
-    var street = [];
-    if (address.street_number) {
-        street.push(address.street_number);
-    }
-    if (address.route) {
-        street.push(address.route);
-    }
-    if (street.length > 0) {
-        $('#street').val(street.join(' '));
-    }
-    if (address.locality) {
-        $('#locality').val(address.locality);
-    }
-    if (address.administrative_area_level_1) {
-        $('#region').val(address.administrative_area_level_1);
-    }
-    if (address.country) {
-        $('#country').val(address.country);
-    }
-};
+export default location;
