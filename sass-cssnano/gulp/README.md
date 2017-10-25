@@ -1,4 +1,4 @@
-# Sass Workflow Using cssnano and Autoprefixer
+# Sass Workflow Using cssnano and Autoprefixer (gulp)
 
 This Sass preprocessor workflow uses cssnano for postprocessing minification and optimization that includes Autoprefixer to add vendor prefixes for only the browsers that need to be supported. Website: http://jimfrenette.com/2016/02/sass-cssnano-autoprefixer/
 
@@ -7,7 +7,7 @@ This Sass preprocessor workflow uses cssnano for postprocessing minification and
 
 2. Download or clone this repsoitory.
 
-3. Change directory to /uiCookbook/sass-cssnano
+3. Change directory to /uiCookbook/sass-cssnano/gulp
 
 4. Run npm install from a bash terminal or command prompt. This will read the package.json file and install the dependencies into the sass-cssnano project folder.
 

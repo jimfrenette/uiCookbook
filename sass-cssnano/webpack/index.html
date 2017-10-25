@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Loading Spinner Demo</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    <div class="loading jshide">Loading&#8230;</div>
+    <button>Load</button>
+    <script>
+
+        var div = document.querySelector('div'),
+            btn = document.querySelector('button');
+
+        btn.addEventListener('click', function() {
+
+            div.className = 'loading';
+
+            btn.disabled = true;
+
+            setTimeout(function() {
+
+                btn.disabled = false;
+
+                div.className = 'loading jshide';
+
+            }, 3000);
+
+        }, false);
+
+    </script>
+</body>
+</html>
