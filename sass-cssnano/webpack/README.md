@@ -25,6 +25,7 @@ After running npm run build, compare the optimized /dist/style.css file that was
 
 Additional reading:
 
+- [jimfrenette.com/2017/11/webpack-3-sass-cssnano-autoprefixer-workflow](http://jimfrenette.com/2017/11/webpack-3-sass-cssnano-autoprefixer-workflow/)
 - [sass-lang.com](http://sass-lang.com "sass-lang.com")
 - [cssnano.co](http://cssnano.co "cssnano.co/")
 - [github.com/postcss/autoprefixer](https://github.com/postcss/autoprefixer)
