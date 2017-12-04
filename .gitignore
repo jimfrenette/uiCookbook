@@ -36,3 +36,6 @@ nbproject
 .sass-cache
 node_modules
 bower_components
+
+# App specific
+/photogrid/dist
