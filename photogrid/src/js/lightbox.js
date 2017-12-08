@@ -35,7 +35,6 @@ export default class Lightbox {
             selector = 'div[data-lightbox="' + lightbox + '"] > div';
 
             $(selector).slick({
-                arrows: false,
                 dots: false
             });
 
@@ -44,14 +43,12 @@ export default class Lightbox {
             });
         }
 
-
-        // // When the user clicks anywhere outside of the modal, close it
-        // window.onclick = function(evt) {
-        //     if (evt.target == lightbox) {
-        //         modal.style.display = "none";
-        //     }
-        // }
-
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(evt) {
+            if (evt.target.dataset.lightbox == lightbox) {
+                $('[data-lightbox="' + lightbox + '"]').css('display', 'none');
+            }
+        }
     }
 
     popSlider(lightbox, selector, el) {
