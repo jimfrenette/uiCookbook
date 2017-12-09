@@ -52,12 +52,20 @@ export default class Lightbox {
                 $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
             });
 
-        // When the user clicks anywhere outside of the modal, close it
+        // close on outside click
         window.onclick = function(evt) {
             if (evt.target.dataset.lightbox == lightbox) {
                 $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
             }
         }
+
+        // close on escape
+        $(document).keyup(function(evt) {
+            if (evt.which === 27) {
+                $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
+            }
+        });
+
     }
 
     popSlider(lightbox, slider, el) {
