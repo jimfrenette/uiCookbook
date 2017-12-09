@@ -37,7 +37,7 @@ export default class Lightbox {
             var slider = $('div[data-lightbox="' + lightbox + '"] .lightbox-slider');
 
             slider.slick({
-                dots: false
+                dots: true
             });
 
             opener.each((index, el) => {
@@ -47,12 +47,13 @@ export default class Lightbox {
 
         // close button
         $('div[data-lightbox="' + lightbox + '"] > div')
-            .prepend('<a class="lightbox-close" href="javascript:void(0)">+</a>')
-            .on( 'click', function() {
-                $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
-            });
+            .prepend('<a class="lightbox-close" href="javascript:void(0)">+</a>');
 
-        // close on outside click
+        $('.lightbox-close').on( 'click', function() {
+            $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
+        });
+
+        //close on outside click
         window.onclick = function(evt) {
             if (evt.target.dataset.lightbox == lightbox) {
                 $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
