@@ -24,24 +24,28 @@ export default class Lightbox {
 
     create(index, el) {
 
-        let selector,
-            lightbox = this.settings.name + '__' + index,
+        let lightbox = this.settings.name + '__' + index,
             opener = $(el).find(this.settings.opener);
 
         $('body').append('<div data-lightbox="' + lightbox + '" class="lightbox"><div></div></div>');
 
         if (this.settings.type === 'slider') {
 
-            selector = 'div[data-lightbox="' + lightbox + '"] > div';
+            $('div[data-lightbox="' + lightbox + '"] > div').append('<div class="lightbox-slider"></div>');
 
-            $(selector).slick({
+            var slider = $('div[data-lightbox="' + lightbox + '"] .lightbox-slider');
+
+            slider.slick({
                 dots: false
             });
 
             opener.each((index, el) => {
-                this.popSlider(lightbox, selector, el);
+                this.popSlider(lightbox, slider, el);
             });
         }
+
+        // close
+        // $('div[data-lightbox="' + lightbox + '"] > div');
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(evt) {
@@ -51,7 +55,7 @@ export default class Lightbox {
         }
     }
 
-    popSlider(lightbox, selector, el) {
+    popSlider(lightbox, slider, el) {
 
         let img = $(el).find('img'),
             src = img.prop('src'),
@@ -70,7 +74,7 @@ export default class Lightbox {
             slide.appendChild(caption);
         }
 
-        $(selector).slick('slickAdd', slide);
+        slider.slick('slickAdd', slide);
 
         img.wrap('<a href="' + src + '"></a>').on( 'click', function(evt) {
 
@@ -80,7 +84,7 @@ export default class Lightbox {
 
             let index = $(this).closest(el).index();
 
-            $(selector).slick('slickGoTo', index);
+            slider.slick('slickGoTo', index);
         });
     }
 
