@@ -14,7 +14,7 @@
 
 ## Google Maps API
 
-location inputs populated by google maps api when the marker is repositioned. no key required.
+    location inputs populated by google maps api when the marker is repositioned. no key required.
 
 * 	[/geocode/gmap-vue](/geocode/gmap-vue)
 
