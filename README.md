@@ -12,14 +12,6 @@
 
 	This code uses the [hbsfy](https://github.com/epeli/node-hbsfy) precompiler plugin for Browserify to compile [Handlebars](http://handlebarsjs.com/) templates into javascript.
 
-## Sass and cssnano
-
-*	[/sass-cssnano](/sass-cssnano)
-
-	Sass Workflow Using cssnano and Autoprefixer
-	[more info](http://jimfrenette.com/2016/02/sass-cssnano-autoprefixer/ "Blog post")
-
-
 ## Google Maps API
 
 > location inputs populated by google maps api when the marker is repositioned.
@@ -79,3 +71,17 @@ $ node node_modules/requirejs/bin/r.js -o require.build.js
 # run
 $ gulp server
 ```
+
+## Photogrid
+
+*	[/photogrid](/photogrid)
+
+	Flexible photogrid with Slick Slider in lightbox
+
+
+## Sass and cssnano
+
+*	[/sass-cssnano](/sass-cssnano)
+
+	Sass Workflow Using cssnano and Autoprefixer
+	[more info](http://jimfrenette.com/2016/02/sass-cssnano-autoprefixer/ "Blog post")
