@@ -31,7 +31,8 @@ export default class Lightbox {
 
         if (this.settings.type === 'slider') {
 
-            $('div[data-lightbox="' + lightbox + '"] > div').append('<div class="lightbox-slider"></div>');
+            $('div[data-lightbox="' + lightbox + '"] > div')
+                .append('<div class="lightbox-slider"></div>');
 
             var slider = $('div[data-lightbox="' + lightbox + '"] .lightbox-slider');
 
@@ -44,8 +45,12 @@ export default class Lightbox {
             });
         }
 
-        // close
-        // $('div[data-lightbox="' + lightbox + '"] > div');
+        // close button
+        $('div[data-lightbox="' + lightbox + '"] > div')
+            .prepend('<a class="lightbox-close" href="javascript:void(0)">+</a>')
+            .on( 'click', function() {
+                $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
+            });
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(evt) {

@@ -13,6 +13,7 @@
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 
   > div {
+    position: relative;
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -29,14 +30,23 @@
   // }
 }
 
-// /* The Close Button */
-// .lightbox-close {
-//   position: absolute;
-//   top: 1.5em;
-//   right: 1.5em;
-//   height: 1.5em;
-//   width: 1.5em;
-//   background: #fff;
-//   cursor: pointer;
-// }
+/* The Close Button */
+.lightbox-close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  background-color: #c0c0c0;
+  transform: rotate(45deg);
+  text-decoration: none;
+  z-index: 10;
+}
 
