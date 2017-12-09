@@ -11,3 +11,4 @@ Given a list of images, this demonstrates how to dynamically produce a lightbox 
 * Sass
 * Cssnano
 * Autoprefixer
+* Lazy image loading
