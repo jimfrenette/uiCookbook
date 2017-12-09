@@ -14,7 +14,7 @@
 
 ## Google Maps API
 
-> location inputs populated by google maps api when the marker is repositioned.
+location inputs populated by google maps api when the marker is repositioned. no key required.
 
 * 	[/geocode/gmap-vue](/geocode/gmap-vue)
 
@@ -22,19 +22,16 @@
 
 * 	[/geocode/gmap-webpack](/geocode/gmap-webpack)
 
-	Browserify version converted for the Webpack module bundler
+	Webpack version converted from the Browserify version below
     [more info](http://jimfrenette.com/2017/03/google-maps-api-with-webpack/ "Blog post")
-
 
 * 	[/geocode/gmap-browserify](/geocode/gmap-browserify)
 
-	uses local javascript modules with Browserify and the google maps api, no key required. Same functionality as the requirejs version below. [more info](http://jimfrenette.com/2016/03/google-maps-api-with-browserify/ "Blog post")
-
+	Browserify version [more info](http://jimfrenette.com/2016/03/google-maps-api-with-browserify/ "Blog post")
 
 * 	[/geocode/gmap-rjs](/geocode/gmap-rjs)
 
-	uses requirejs with an async plugin to load the google maps api, no key required.
-	dragging the marker to a location in the map retrieves location data and sets values in text inputs.
+    RequireJS (the original version of this gmap proof-of-concept)
 	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")
 
 

@@ -1,6 +1,6 @@
 # gmap-webpack
 
-> Browserify version converted for the Webpack module bundler, [more info](http://jimfrenette.com/2017/03/google-maps-api-with-webpack/ "Blog post").
+> Webpack version converted from the [Browserify version](../gmap-browserify), [more info](http://jimfrenette.com/2017/03/google-maps-api-with-webpack/ "Blog post").
 
 ```
 $ npm install
