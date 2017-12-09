@@ -31,7 +31,7 @@
 
     location inputs populated by google maps api when the marker is repositioned. no key required.
 
-    RequireJS (the original version of this gmap proof-of-concept)
+    RequireJS version (the original version of this gmap proof-of-concept)
 	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")
 
 ## Photogrid
