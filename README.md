@@ -14,8 +14,6 @@
 
 ## Google Maps API
 
-    location inputs populated by google maps api when the marker is repositioned. no key required.
-
 * 	[/geocode/gmap-vue](/geocode/gmap-vue)
 
 	Vue and Webpack version
@@ -31,16 +29,16 @@
 
 * 	[/geocode/gmap-rjs](/geocode/gmap-rjs)
 
+    location inputs populated by google maps api when the marker is repositioned. no key required.
+
     RequireJS (the original version of this gmap proof-of-concept)
 	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")
-
 
 ## Photogrid
 
 *	[/photogrid](/photogrid)
 
 	Flexible photogrid with Slick slider in lightbox
-
 
 ## Sass and cssnano
 
