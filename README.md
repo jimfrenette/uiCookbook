@@ -76,7 +76,7 @@ $ gulp server
 
 *	[/photogrid](/photogrid)
 
-	Flexible photogrid with Slick Slider in lightbox
+	Flexible photogrid with Slick slider in lightbox
 
 
 ## Sass and cssnano
