@@ -51,7 +51,7 @@
   line-height: 20px;
   font-size: 20px;
   font-weight: bold;
-  color: #fff;
+  color: rgba(255,255,255,0.75);
   width: 20px;
   height: 20px;
   transform: rotate(45deg);
@@ -59,7 +59,7 @@
   z-index: 10;
 
   &:hover {
-    color: rgba(255,255,255,0.75);
+    color: rgb(255,255,255);
   }
 }
 
