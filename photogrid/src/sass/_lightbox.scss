@@ -1,6 +1,6 @@
 /* overlay (background) */
 .lightbox {
-  max-height: 0; overflow-y: hidden; /* instead of `display: none` so slider can init properly. */
+  max-height: 0; /* instead of `display: none` so slider can init properly. */
 
   position: fixed; /* stay in place */
   z-index: 1;
@@ -38,7 +38,7 @@
   }
 
   &.is-open {
-    max-height: 100%; overflow-y: auto; /* unhide */
+    max-height: 100%; /* unhide */
   }
 }
 
