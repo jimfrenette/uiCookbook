@@ -46,7 +46,7 @@ export default class Lightbox {
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(evt) {
             if (evt.target.dataset.lightbox == lightbox) {
-                $('[data-lightbox="' + lightbox + '"]').css('display', 'none');
+                $('[data-lightbox="' + lightbox + '"]').removeClass('is-open');
             }
         }
     }
@@ -76,7 +76,7 @@ export default class Lightbox {
 
             evt.preventDefault();
 
-            $('[data-lightbox="' + lightbox + '"]').css('display', 'block');
+            $('[data-lightbox="' + lightbox + '"]').addClass('is-open');
 
             let index = $(this).closest(el).index();
 
