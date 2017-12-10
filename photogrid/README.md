@@ -12,3 +12,18 @@ Given a list of images, this demonstrates how to dynamically produce a lightbox 
 * Cssnano
 * Autoprefixer
 * Lazy image loading
+
+
+> Node.js
+
+install & run
+```
+npm i
+
+npm run build
+```
+
+developer mode
+```
+npm run dev
+```
