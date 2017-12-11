@@ -16,14 +16,16 @@ Given a list of images, this demonstrates how to dynamically produce a lightbox 
 
 > Node.js
 
-install & run
+install & build
 ```
 npm i
 
 npm run build
 ```
 
-developer mode
+developer mode, watch and build
 ```
 npm run dev
 ```
+
+For a good static web server, try [http-server](https://www.npmjs.com/package/http-server)
