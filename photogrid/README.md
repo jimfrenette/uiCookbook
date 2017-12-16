@@ -16,7 +16,7 @@ Given a list of images, this demonstrates how to dynamically produce a lightbox 
 
 > Node.js
 
-install & build
+install and build
 ```
 npm i
 
