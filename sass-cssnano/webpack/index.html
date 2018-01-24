@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Loading Spinner Demo</title>
-    <link rel="stylesheet" href="dist/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" media="all" href="dist/style.css">
 </head>
 <body>
-    <div class="loading jshide">Loading&#8230;</div>
-    <button>Load</button>
-    <script>
-
-        var div = document.querySelector('div'),
-            btn = document.querySelector('button');
-
-        btn.addEventListener('click', function() {
-
-            div.className = 'loading';
-
-            btn.disabled = true;
-
-            setTimeout(function() {
-
-                btn.disabled = false;
-
-                div.className = 'loading jshide';
-
-            }, 3000);
-
-        }, false);
-
-    </script>
+    <ul class="slider">
+        <li>
+            <h3>Slide 1</h3>
+            <img src="http://placehold.it/800x600" />
+        </li>
+        <li>
+            <h3>Slide 2</h3>
+            <img src="http://placehold.it/800x600" />
+        </li>
+        <li>
+            <h3>Slide 3</h3>
+            <img src="http://placehold.it/800x600" />
+        </li>
+        <li>
+            <h3>Slide 4</h3>
+            <img src="http://placehold.it/800x600" />
+        </li>
+        <li>
+            <h3>Slide 5</h3>
+            <img src="http://placehold.it/800x600" />
+        </li>
+    </ul>
+    <script async src="dist/app.js"></script>
 </body>
 </html>
