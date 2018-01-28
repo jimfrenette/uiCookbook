@@ -1,7 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin')
 
 module.exports = {
 context: path.resolve(__dirname, './src'),
@@ -54,11 +55,12 @@ context: path.resolve(__dirname, './src'),
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
       filename: '../index.html',
       template: 'index.html'
-    })
+    }),
+    new ExtractTextPlugin('style.css'),
+    new StyleExtHtmlWebpackPlugin()
   ],
   devtool: '#eval-source-map'
 }
