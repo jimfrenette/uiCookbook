@@ -1,0 +1,26 @@
+/* node_modules */
+@import "~slick-carousel/slick/slick.scss";
+@import "~slick-carousel/slick/slick-theme.scss";
+
+.slider {
+  li {
+    text-align: center;
+  }
+  img { // center
+    margin: auto;
+  }
+
+  .slick-next,
+  .slick-prev {
+    &:before {
+      color: #000;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
+}
