@@ -20,8 +20,6 @@ npm install
 npm run build
 ```
 
-After running npm run build, compare the optimized /dist/style.css file that was created from the sass and notice that the applicable vendor prefixes have been added.
-
 
 Additional reading:
 

@@ -6,7 +6,7 @@ This Sass preprocessor workflow uses cssnano for postprocessing minification and
 
 2. Download or clone this repsoitory.
 
-3. Change directory to /uiCookbook/sass-cssnano/webpack
+3. Change directory to /uiCookbook/sass-cssnano/webpack-html
 
 4. Run npm install from a bash terminal or command prompt. This will read the package.json file and install the dependencies into the sass-cssnano project folder.
 
@@ -14,13 +14,11 @@ This Sass preprocessor workflow uses cssnano for postprocessing minification and
 npm install
 ```
 
-- Finally, run npm run build to process the Sass into css and post process the css using cssnano
+- Build
 
 ```
 npm run build
 ```
-
-After running npm run build, compare the optimized /dist/style.css file that was created from the sass and notice that the applicable vendor prefixes have been added.
 
 
 Additional reading:
