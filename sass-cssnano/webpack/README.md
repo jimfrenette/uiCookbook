@@ -14,7 +14,7 @@ This Sass preprocessor workflow uses cssnano for postprocessing minification and
 npm install
 ```
 
-- Finally, run npm run build to process the Sass into css and post process the css using cssnano
+- Build
 
 ```
 npm run build
