@@ -44,4 +44,4 @@
 
 *	[/sass-cssnano](/sass-cssnano)
 
-    [more info](http://jimfrenette.com/2018/01/webpack-3-sass-cssnano-autoprefixer-workflow-2/ "Blog post")
+    Sass Workflow Using cssnano and Autoprefixer [more info](http://jimfrenette.com/2018/01/webpack-3-sass-cssnano-autoprefixer-workflow-2/ "Blog post")
