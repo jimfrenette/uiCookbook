@@ -15,10 +15,11 @@
   > div {
     position: relative;
     background-color: rgb(0,0,0);
-    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     color: #fff;
     //width: 100%; /* could be more or less, depending on screen size */
+    width: 90vw;
+    margin: 5vw auto;
 
     .slick-prev,
     .slick-next {
@@ -39,6 +40,22 @@
 
   &.is-open {
     max-height: 100%; /* unhide */
+  }
+
+  @media only screen and (max-width: 600px) {
+    > div {
+      padding: 20px 2vw;
+
+      .slick-next, .slick-prev {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    > div {
+      max-width: 1024px;
+    }
   }
 }
 
@@ -62,4 +79,3 @@
     color: rgb(255,255,255);
   }
 }
-
