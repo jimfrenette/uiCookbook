@@ -10,7 +10,7 @@
   height: 100%;
   overflow: auto; /* enable scroll if needed */
   background-color: rgb(0,0,0); /* fallback color */
-  background-color: rgba(0,0,0,0.75); /* black w/ opacity */
+  background-color: rgba(0,0,0,0.80); /* black w/ opacity */
 
   > div {
     position: relative;
@@ -43,8 +43,16 @@
   }
 
   @media only screen and (max-width: 600px) {
+    background-color: rgba(0,0,0,0.95); /* black w/ opacity */
+
     > div {
-      padding: 20px 2vw;
+      padding: 40px 0 20px 0;
+      width: 100vw;
+      margin: 0 auto;
+
+      .slick-slide p {
+        padding: 0 15px;
+      }
 
       .slick-next, .slick-prev {
         display: none;
@@ -77,5 +85,14 @@
 
   &:hover {
     color: rgb(255,255,255);
+  }
+
+  @media only screen and (max-width: 600px) {
+    top: 4px;
+    right: 4px;
+    line-height: 32px;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
   }
 }
