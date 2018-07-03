@@ -1,6 +1,6 @@
 # Sass Workflow Using cssnano and Autoprefixer (webpack)
 
-This Sass preprocessor workflow uses cssnano for postprocessing minification and optimization that includes Autoprefixer to add vendor prefixes for only the browsers that need to be supported. Website: http://jimfrenette.com/2018/02/webpack-3-sass-cssnano-autoprefixer-workflow-3/
+This Sass preprocessor workflow uses cssnano for postprocessing minification and optimization that includes Autoprefixer to add vendor prefixes for only the browsers that need to be supported. <!-- Website: http://jimfrenette.com/2018/02/webpack-3-sass-cssnano-autoprefixer-workflow-3/  TODO: check that this outputs inline css -->
 
 1. Requires [Node.js](https://nodejs.org "Node.js")
 
