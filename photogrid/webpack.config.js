@@ -2,6 +2,11 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+/**
+ * TODO remove cross-env
+ * https://webpack.js.org/guides/environment-variables/
+ */
+
 module.exports = {
 context: path.resolve(__dirname, './src'),
   entry: {
@@ -23,7 +28,7 @@ context: path.resolve(__dirname, './src'),
           {
             loader: 'css-loader',
             options: {
-              minimize: true || {/* CSSNano Options */}
+              minimize: false
             }
           },
           {
