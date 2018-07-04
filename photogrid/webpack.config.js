@@ -63,6 +63,7 @@ context: path.resolve(__dirname, './src'),
 }
 
 if (process.env.NODE_ENV === 'production') {
+  module.exports.mode = 'production'
   module.exports.devtool = '#source-map'
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
@@ -70,14 +71,11 @@ if (process.env.NODE_ENV === 'production') {
         NODE_ENV: '"production"'
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
-      }
-    }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
   ])
+}
+else if (process.env.NODE_ENV === 'development') {
+  module.exports.mode = 'development'
 }

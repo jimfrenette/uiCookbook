@@ -18,6 +18,15 @@ Given a list of images, this demonstrates how to dynamically produce a lightbox 
 > Node.js
 
 install and build
+
+YARN
+```
+yarn
+
+yarn run build
+```
+
+NPM
 ```
 npm i
 
@@ -26,6 +35,10 @@ npm run build
 
 developer mode, watch and build
 ```
+yarn run dev
+
+# or
+
 npm run dev
 ```
 
