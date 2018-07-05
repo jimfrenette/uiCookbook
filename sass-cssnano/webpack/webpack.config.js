@@ -2,11 +2,6 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-/**
- * TODO remove cross-env
- * https://webpack.js.org/guides/environment-variables/
- */
-
 module.exports = {
 context: path.resolve(__dirname, './src'),
   entry: {
@@ -64,7 +59,6 @@ context: path.resolve(__dirname, './src'),
 }
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.mode = 'production'
   module.exports.devtool = '#source-map'
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
@@ -76,7 +70,4 @@ if (process.env.NODE_ENV === 'production') {
       minimize: true
     })
   ])
-}
-else if (process.env.NODE_ENV === 'development') {
-  module.exports.mode = 'development'
 }

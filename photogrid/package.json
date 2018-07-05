@@ -9,8 +9,8 @@
     "ie > 9"
   ],
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --watch --progress --colors",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "dev": "webpack --mode=development --watch --progress --colors",
+    "build": "webpack --mode=production --progress --hide-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jim Frenette",
@@ -20,7 +20,6 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
-    "cross-env": "^5.2.0",
     "css-loader": "^0.28.11",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.9.0",
