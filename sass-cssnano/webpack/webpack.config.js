@@ -52,9 +52,7 @@ context: path.resolve(__dirname, './src'),
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'style.css'
-    })
+    new MiniCssExtractPlugin
   ],
   devtool: '#eval-source-map'
 }
