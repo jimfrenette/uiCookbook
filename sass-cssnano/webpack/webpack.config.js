@@ -1,12 +1,12 @@
 const path = require('path')
 const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
 context: path.resolve(__dirname, './src'),
   entry: {
     app: './js/index.js',
-    css: './sass/main.scss',
+    style: './sass/main.scss',
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -17,29 +17,28 @@ context: path.resolve(__dirname, './src'),
     rules: [
     {
       test: /\.(css|scss)$/,
-      use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: [
-          {
-            loader: 'css-loader',
-            options: {
-              minimize: true || {/* CSSNano Options */}
-            }
-          },
-          {
-            loader: 'postcss-loader'
-          },
-          {
-            /* for ~slick-carousel/slick/slick-theme.scss */
-            loader: 'resolve-url-loader'
-          },
-          {
-            /* for resolve-url-loader:
-                source maps must be enabled on any preceding loader */
-            loader: 'sass-loader?sourceMap'
+      use: [
+        'style-loader',
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+          options: {
+            minimize: true || {/* CSSNano Options */}
           }
-        ]
-      })
+        },
+        {
+          loader: 'postcss-loader'
+        },
+        {
+          /* for ~slick-carousel/slick/slick-theme.scss */
+          loader: 'resolve-url-loader'
+        },
+        {
+          /* for resolve-url-loader:
+              source maps must be enabled on any preceding loader */
+          loader: 'sass-loader?sourceMap'
+        }
+      ]
     },
     {
       test: /\.js$/,
@@ -53,7 +52,9 @@ context: path.resolve(__dirname, './src'),
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css')
+    new MiniCssExtractPlugin({
+      filename: 'style.css'
+    })
   ],
   devtool: '#eval-source-map'
 }
