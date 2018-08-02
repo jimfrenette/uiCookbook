@@ -11,20 +11,12 @@ This Sass preprocessor workflow uses cssnano for postprocessing minification and
 4. Run npm install from a bash terminal or command prompt. This will read the package.json file and install the dependencies into the sass-cssnano project folder.
 
 ```
-yarn
-
-# or
-
 npm install
 ```
 
 - Build
 
 ```
-yarn run build
-
-# or
-
 npm run build
 ```
 
