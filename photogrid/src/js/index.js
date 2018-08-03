@@ -1,3 +1,4 @@
+import style from '../sass/style.scss'
 import Lazyimage from './lazyimage'
 import Lightbox from './lightbox'
 

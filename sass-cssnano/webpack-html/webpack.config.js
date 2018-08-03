@@ -7,8 +7,7 @@ const StyleExtHtmlWebpackPlugin = require('style-ext-html-webpack-plugin')
 module.exports = {
 context: path.resolve(__dirname, './src'),
   entry: {
-    app: './js/index.js',
-    css: './sass/main.scss',
+    app: './js/index.js'
   },
   output: {
     path: path.resolve(__dirname, './dist'),
