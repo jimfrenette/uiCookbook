@@ -1,0 +1,51 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.sidebar-1 {
+  background: gold;
+}
+
+.sidebar-2 {
+  background: hotpink;
+}
+
+@media all and (min-width: 600px) {
+  .sidebar { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .sidebar-1 { order: 1; }
+  .main    { order: 2; }
+  .sidebar-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}
+
+@import "toggle";

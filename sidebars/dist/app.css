@@ -1,0 +1,81 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; }
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%; }
+
+.header {
+  background: tomato; }
+
+.footer {
+  background: lightgreen; }
+
+.main {
+  text-align: left;
+  background: deepskyblue; }
+
+.sidebar-1 {
+  background: gold; }
+
+.sidebar-2 {
+  background: hotpink; }
+
+@media all and (min-width: 600px) {
+  .sidebar {
+    flex: 1 auto; } }
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px; }
+  .sidebar-1 {
+    order: 1; }
+  .main {
+    order: 2; }
+  .sidebar-2 {
+    order: 3; }
+  .footer {
+    order: 4; } }
+
+body {
+  padding: 2em; }
+
+/**
+ * Sidebar toggle */
+.sidebar-1,
+.sidebar-2 {
+  visibility: collapse;
+  width: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  transition-timing-function: ease-in; }
+
+/**
+  * checkboxes open/close the sidebars
+  * #sidebar-1-toggle and #sidebar-2-toggle
+  */
+#sidebar-1-toggle, #sidebar-2-toggle {
+  display: none; }
+
+label[for=sidebar-1-toggle],
+label[for=sidebar-2-toggle] {
+  position: absolute;
+  top: 0;
+  display: block; }
+
+label[for=sidebar-1-toggle] {
+  left: 0; }
+
+label[for=sidebar-2-toggle] {
+  right: 0; }
+
+#sidebar-1-toggle:checked ~ label[for=sidebar-1-toggle] ~ .sidebar-1,
+#sidebar-2-toggle:checked ~ label[for=sidebar-2-toggle] ~ .sidebar-2 {
+  visibility: visible;
+  width: 20%;
+  opacity: 1; }
+

@@ -30,7 +30,12 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       },
       { /* for ~slick-carousel/slick/slick-theme.scss */
         test: /\.(eot|woff|woff2|ttf|svg|png|jpg|gif)$/,
