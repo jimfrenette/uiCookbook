@@ -8,19 +8,25 @@
 	<link rel="stylesheet" media="all" href="/dist/app.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="site">
 		<header class="header">Header</header>
-		<article class="main">
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-				feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi
-				vitae est. Mauris placerat eleifend leo.</p>
-		</article>
-		<input type="checkbox" id="sidebar-1-toggle">
-		<label for="sidebar-1-toggle">X</label>
-		<aside class="sidebar sidebar-1">Sidebar 1</aside>
-		<input type="checkbox" id="sidebar-2-toggle">
-		<label for="sidebar-2-toggle">X</label>
-		<aside class="sidebar sidebar-2">Sidebar 2</aside>
+		<div class="content">
+			<article class="main">
+				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
+					feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi
+					vitae est. Mauris placerat eleifend leo.</p>
+			</article>
+			<input type="checkbox" id="sidebar-1-toggle">
+			<label for="sidebar-1-toggle">X</label>
+			<aside class="sidebar sidebar-1">
+				<div>Sidebar 1</div>
+			</aside>
+			<input type="checkbox" id="sidebar-2-toggle">
+			<label for="sidebar-2-toggle">X</label>
+			<aside class="sidebar sidebar-2">
+				<div>Sidebar 2</div>
+			</aside>
+		</div>
 		<footer class="footer">Footer</footer>
 	</div>
 	<script async src="/dist/app.js"></script>

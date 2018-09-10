@@ -1,27 +1,39 @@
-.wrapper {
+body {
+  min-width: 400px;
+}
+
+.site {
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
-  display: flex;
-  flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
 }
 
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
+.content {
+  display: flex;
 }
 
 .header {
   background: tomato;
+  padding: 10px;
 }
 
 .footer {
   background: lightgreen;
+  padding: 10px;
 }
 
 .main {
+  flex: 1;
+  min-width: 0;
   text-align: left;
   background: deepskyblue;
+  padding: 10px;
+}
+
+.sidebar > div {
+  padding: 10px;
 }
 
 .sidebar-1 {
@@ -32,20 +44,20 @@
   background: hotpink;
 }
 
-@media all and (min-width: 600px) {
-  .sidebar { flex: 1 auto; }
+@media all and (max-width: 800px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .main {
+    flex: 1 1 100%;
+  }
 }
 
-@media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
+@media all and (min-width: 801px) {
   .sidebar-1 { order: 1; }
   .main    { order: 2; }
   .sidebar-2 { order: 3; }
-  .footer  { order: 4; }
 }
 
-body {
-  padding: 2em;
-}
 
 @import "toggle";
