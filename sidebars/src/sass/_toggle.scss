@@ -1,47 +1,45 @@
 /**
- * Sidebar toggle */
+ * Sidebar toggle
+ */
 
-.sidebar {
- display: none;
-}
+// uncomment for default closed sidebars
+// @import "default-closed";
+// uncomment for default open sidebars
+@import "default-open";
 
- /**
-  * checkboxes open/close the sidebars
-  * #sidebar-1-toggle and #sidebar-2-toggle
-  */
+/**
+ * checkboxes open/close the sidebars
+ * #sidebar-1-toggle and #sidebar-2-toggle
+ */
  #sidebar-1-toggle, #sidebar-2-toggle {
   display: none;
 }
 
- label[for=sidebar-1-toggle],
- label[for=sidebar-2-toggle] {
+label[for=sidebar-1-toggle],
+label[for=sidebar-2-toggle] {
   position: absolute;
   top: 0;
   display: block;
-  padding: 10px;
+  padding: .25em 10px;
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
- label[for=sidebar-1-toggle] {
+label[for=sidebar-1-toggle] {
   left: 0;
 }
 
- label[for=sidebar-2-toggle] {
+label[for=sidebar-2-toggle] {
   right: 0;
-}
-
- #sidebar-1-toggle:checked ~ label[for=sidebar-1-toggle] ~ .sidebar-1,
- #sidebar-2-toggle:checked ~ label[for=sidebar-2-toggle] ~ .sidebar-2 {
-  display: block;
-  width: 20%;
 }
 
 @media all and (max-width: 800px) {
   label[for=sidebar-1-toggle],
   label[for=sidebar-2-toggle] {
-   display: none;
- }
- .sidebar-1,
- .sidebar-2 {
+    display: none;
+  }
+  .sidebar-1,
+  .sidebar-2 {
     display: block;
     width: 50%;
   }
