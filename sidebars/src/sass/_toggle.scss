@@ -1,12 +1,8 @@
 /**
  * Sidebar toggle */
- .sidebar-1,
- .sidebar-2 {
-  visibility: collapse;
-  width: 0;
-  opacity: 0;
-  transition: all 0.5s;
-  transition-timing-function: ease-in;
+
+.sidebar {
+ display: none;
 }
 
  /**
@@ -35,9 +31,8 @@
 
  #sidebar-1-toggle:checked ~ label[for=sidebar-1-toggle] ~ .sidebar-1,
  #sidebar-2-toggle:checked ~ label[for=sidebar-2-toggle] ~ .sidebar-2 {
-  visibility: visible;
+  display: block;
   width: 20%;
-  opacity: 1;
 }
 
 @media all and (max-width: 800px) {
@@ -45,9 +40,9 @@
   label[for=sidebar-2-toggle] {
    display: none;
  }
- .sidebar {
-    visibility: visible;
+ .sidebar-1,
+ .sidebar-2 {
+    display: block;
     width: 50%;
-    opacity: 1;
   }
 }
