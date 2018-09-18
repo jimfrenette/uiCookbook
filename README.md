@@ -45,3 +45,10 @@
 *	[/sass-cssnano](/sass-cssnano)
 
     Sass Workflow Using cssnano and Autoprefixer [more info](http://jimfrenette.com/2018/01/webpack-3-sass-cssnano-autoprefixer-workflow-2/ "Blog post")
+
+
+## Sidebars Toggle
+
+*	[/sidebars](/sidebars)
+
+    CSS Flexbox with Sidebars Toggle [more info](https://jimfrenette.com/2018/09/css-flexbox-with-sidebars-toggle/ "Blog post")
