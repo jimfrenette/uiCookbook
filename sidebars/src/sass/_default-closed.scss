@@ -20,8 +20,8 @@ label[for=sidebar-2-toggle] {
   }
 }
 
-#sidebar-1-toggle:checked ~ label[for=sidebar-1-toggle] ~ .sidebar-1,
-#sidebar-2-toggle:checked ~ label[for=sidebar-2-toggle] ~ .sidebar-2 {
+#sidebar-1-toggle:checked ~ .sidebar-1,
+#sidebar-2-toggle:checked ~ .sidebar-2 {
   display: block;
   width: 20%;
 }
