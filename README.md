@@ -20,18 +20,6 @@ Here is a list of the recipies. I will try to keep these ordered by last updated
 
     Sass Workflow Using cssnano and Autoprefixer [more info](http://jimfrenette.com/2018/01/webpack-3-sass-cssnano-autoprefixer-workflow-2/ "Blog post")
 
-## Easy Browsersync Server
-
-*   [/easybs](/easybs)
-
-    An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
-
-## Handlebars with Browserify
-
-*   [/hb-browserify](/hb-browserify)
-
-	This code uses the [hbsfy](https://github.com/epeli/node-hbsfy) precompiler plugin for Browserify to compile [Handlebars](http://handlebarsjs.com/) templates into javascript.
-
 ## Google Maps API
 
 * 	[/geocode/gmap-vue](/geocode/gmap-vue)
@@ -52,5 +40,16 @@ Here is a list of the recipies. I will try to keep these ordered by last updated
     location inputs populated by google maps api when the marker is repositioned. no key required.
 
     RequireJS version (the original version of this gmap proof-of-concept)
-	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")
+	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")    
 
+## Handlebars with Browserify
+
+*   [/hb-browserify](/hb-browserify)
+
+	This code uses the [hbsfy](https://github.com/epeli/node-hbsfy) precompiler plugin for Browserify to compile [Handlebars](http://handlebarsjs.com/) templates into javascript.
+
+## Easy Browsersync Server
+
+*   [/easybs](/easybs)
+
+    An HTML 5 Template with a NPM package config to install a minimal set of development tools including a Browsersync server and Gulp task runner.
