@@ -10,7 +10,8 @@ Fully responsive flexbox content layout that contains a pure CSS open/close togg
 * PostCSS Autoprefixer
 * CSSnano
 * Webpack 4
-* Webpack Dev Server
+* Webpack Dev Server: [webpack-plugin-serve](https://github.com/shellscape/webpack-plugin-serve)
+* Webpack CLI: [webpack-nano](https://github.com/shellscape/webpack-nano)
 
 
 1. Requires [Node.js](https://nodejs.org "Node.js")
@@ -41,3 +42,5 @@ npm run build
 Additional reading:
 
 - [jimfrenette.com/2018/09/css-flexbox-with-sidebars-toggle/](https://jimfrenette.com/2018/09/css-flexbox-with-sidebars-toggle/)
+
+- [sane filesystem watcher](https://github.com/amasad/sane)
