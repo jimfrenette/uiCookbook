@@ -1,6 +1,6 @@
 # CSS Flexbox with Sidebars Toggle
 
-Fully responsive flexbox content layout that contains a pure CSS open/close toggle for the left and right sidebars. The CSS is built from Sass using Webpack with Autoprefixer. For development, a Webpack Dev Server is included.
+Fully responsive flexbox content layout that contains a pure CSS open/close toggle for the left and right sidebars. The CSS is built from Sass using Webpack with Autoprefixer. For development, a Webpack Dev Server plugin is included.
 
 
 **Features**
@@ -10,7 +10,8 @@ Fully responsive flexbox content layout that contains a pure CSS open/close togg
 * PostCSS Autoprefixer
 * CSSnano
 * Webpack 4
-* Webpack Dev Server
+* Webpack Dev Server: [webpack-plugin-serve](https://github.com/shellscape/webpack-plugin-serve)
+* Webpack CLI: [webpack-nano](https://github.com/shellscape/webpack-nano)
 
 
 1. Requires [Node.js](https://nodejs.org "Node.js")
@@ -39,5 +40,7 @@ npm run build
 ```
 
 Additional reading:
+
+- [jimfrenette.com/2018/12/new-webpack-development-server-plugin/](https://jimfrenette.com/2018/12/new-webpack-development-server-plugin/)
 
 - [jimfrenette.com/2018/09/css-flexbox-with-sidebars-toggle/](https://jimfrenette.com/2018/09/css-flexbox-with-sidebars-toggle/)

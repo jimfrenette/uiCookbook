@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   context: path.resolve(__dirname, '../src'),
   entry: {
-    app: './js/index.js'
+    app: ['./js/index.js'] // use an array across all configs for consistent webpack-merge
   },
   plugins: [
     new MiniCssExtractPlugin
