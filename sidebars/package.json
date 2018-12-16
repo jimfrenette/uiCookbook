@@ -8,8 +8,8 @@
     "ie > 10"
   ],
   "scripts": {
-    "dev": "wp --progress --colors --config config/dev.config.js",
-    "build": "wp --progress --hide-modules --config config/prod.config.js",
+    "dev": "wp --config config/dev.config.js",
+    "build": "wp --config config/prod.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -24,7 +24,6 @@
     "node-sass": "^4.9.3",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-loader": "^3.0.0",
-    "sane": "^4.0.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.17.1",

@@ -1,6 +1,6 @@
 # CSS Flexbox with Sidebars Toggle
 
-Fully responsive flexbox content layout that contains a pure CSS open/close toggle for the left and right sidebars. The CSS is built from Sass using Webpack with Autoprefixer. For development, a Webpack Dev Server is included.
+Fully responsive flexbox content layout that contains a pure CSS open/close toggle for the left and right sidebars. The CSS is built from Sass using Webpack with Autoprefixer. For development, a Webpack Dev Server plugin is included.
 
 > NOTE: This `wp-plugin-serve` branch is for testing [webpack-plugin-serve](https://github.com/shellscape/webpack-plugin-serve)
 
