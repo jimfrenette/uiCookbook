@@ -19,7 +19,7 @@ Fully responsive flexbox content layout that contains a pure CSS open/close togg
 
 3. Change directory to /uiCookbook/sidebars
 
-4. Run npm install from a bash terminal or command prompt. This will read the `package.json` file and install the dependencies into the sass-cssnano project folder.
+4. Run npm install from a bash terminal or command prompt. This will read the `package.json` file and install the dependencies into the sidebars project folder.
 
 ```
 npm install
