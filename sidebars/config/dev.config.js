@@ -1,6 +1,5 @@
 const baseConfig = require('./base.config.js');
 const merge = require('webpack-merge');
-const writeFilePlugin = require('write-file-webpack-plugin');
 const { WebpackPluginServe: Serve } = require('webpack-plugin-serve');
 
 const serve = new Serve({
@@ -17,8 +16,7 @@ module.exports = merge(baseConfig, {
     app: ['webpack-plugin-serve/client']
   },
   plugins: [
-    serve,
-    new writeFilePlugin()
+    serve
   ],
   watch: true
 });

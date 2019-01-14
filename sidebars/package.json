@@ -29,8 +29,7 @@
     "webpack": "^4.17.1",
     "webpack-merge": "^4.1.4",
     "webpack-nano": "^0.5.1",
-    "webpack-plugin-serve": "^0.2.2",
-    "write-file-webpack-plugin": "^4.4.0"
+    "webpack-plugin-serve": "^0.2.2"
   },
   "dependencies": {}
 }
