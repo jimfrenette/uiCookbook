@@ -1,4 +1,4 @@
-import style from '../sass/main.scss'
+import '../sass/main.scss'
 import $ from 'jquery'
 import 'slick-carousel'
 
