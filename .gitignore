@@ -39,3 +39,4 @@ bower_components
 
 # App specific
 /photogrid/dist
+/slick/dist

@@ -1,0 +1,22 @@
+{
+  "name": "slick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:slidestoshow": "parcel ./src/slides-to-show/slides-to-show.html",
+    "build:slidestoshow": "parcel build ./src/slides-to-show/slides-to-show.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6",
+    "sass": "^1.18.0"
+  },
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

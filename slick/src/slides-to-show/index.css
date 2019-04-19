@@ -1,0 +1,38 @@
+/* node_modules */
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 1440px;
+    margin: auto;
+    padding: 10px;
+    background: #cfcfcf;
+}
+
+.carousel {
+    margin-right: -10px;
+}
+
+.slide-content {
+    display: inline-block;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width: 980px) {
+    main {
+        padding: 50px;
+    }
+
+    .carousel {
+        max-width: 980px;
+        margin: auto;
+        /* margin-left: auto; */
+    }
+}
+
