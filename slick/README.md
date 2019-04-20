@@ -1,4 +1,7 @@
-# Slick Carousel Recipies
+# Slick Carousel Recipe
+
+[Blog post](https://jimfrenette.com/2019/04/slick-carousel-responsive-slides-to-show/)
+
 
 Install the `slick-carousel` node modules
 ```

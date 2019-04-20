@@ -32,7 +32,5 @@ main {
     .carousel {
         max-width: 980px;
         margin: auto;
-        /* margin-left: auto; */
     }
 }
-
