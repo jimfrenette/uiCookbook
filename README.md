@@ -2,6 +2,12 @@
 
 Here is a list of the recipies. I will try to keep these ordered by last updated.
 
+## Slick Carousel Responsive slidesToShow Recipe
+
+*   [/slick](/slick)
+
+    [more info](https://jimfrenette.com/2019/04/slick-carousel-responsive-slides-to-show/ "Blog post")
+
 ## Sidebars Toggle
 
 *	[/sidebars](/sidebars)
@@ -18,7 +24,7 @@ Here is a list of the recipies. I will try to keep these ordered by last updated
 
 *	[/sass-cssnano](/sass-cssnano)
 
-    Sass Workflow Using cssnano and Autoprefixer [more info](http://jimfrenette.com/2018/01/webpack-3-sass-cssnano-autoprefixer-workflow-2/ "Blog post")
+    Sass Workflow Using cssnano and Autoprefixer [more info](https://jimfrenette.com/2018/01/webpack-3-sass-cssnano-autoprefixer-workflow-2/ "Blog post")
 
 ## Google Maps API
 
@@ -29,18 +35,18 @@ Here is a list of the recipies. I will try to keep these ordered by last updated
 * 	[/geocode/gmap-webpack](/geocode/gmap-webpack)
 
 	Webpack version converted from the Browserify version below
-    [more info](http://jimfrenette.com/2017/03/google-maps-api-with-webpack/ "Blog post")
+    [more info](https://jimfrenette.com/2017/03/google-maps-api-with-webpack/ "Blog post")
 
 * 	[/geocode/gmap-browserify](/geocode/gmap-browserify)
 
-	Browserify version [more info](http://jimfrenette.com/2016/03/google-maps-api-with-browserify/ "Blog post")
+	Browserify version [more info](https://jimfrenette.com/2016/03/google-maps-api-with-browserify/ "Blog post")
 
 * 	[/geocode/gmap-rjs](/geocode/gmap-rjs)
 
     location inputs populated by google maps api when the marker is repositioned. no key required.
 
     RequireJS version (the original version of this gmap proof-of-concept)
-	[more info](http://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")    
+	[more info](https://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")    
 
 ## Handlebars with Browserify
 
