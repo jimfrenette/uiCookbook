@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+		body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        div {margin: 20px 0 40px; padding: 20px; background-color:#f7f7f7;}
+        div.tall {min-height: 800px;}
+    </style>
+</head>
+<body>
+
+	<div>
+	<button>Scroll to last container</button>
+
+	<p>This vanila JS <code>smoothscroll</code> module can be used instead of <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior">scroll-behavior</a>: smooth</code> css which is unsupported across browsers.</p>
+
+	Similar to jQuery:
+	<pre><code>
+	$('html,body').animate({
+		scrollTop: offset
+	}, 1000);
+	</code></pre>
+	</div>
+
+    <div class="tall">
+        A very tall container
+    </div>
+
+    <div class="tall">
+        Another tall container
+    </div>
+
+    <div class="tall">
+        Container to scroll to
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

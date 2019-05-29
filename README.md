@@ -2,6 +2,10 @@
 
 Here is a list of the recipies. I will try to keep these ordered by last updated.
 
+## Smooth Scroll Vanilla JavaScript
+
+*   [/smoothscroll](/smoothscroll)
+
 ## Slick Carousel Responsive slidesToShow Recipe
 
 *   [/slick](/slick)
@@ -46,7 +50,7 @@ Here is a list of the recipies. I will try to keep these ordered by last updated
     location inputs populated by google maps api when the marker is repositioned. no key required.
 
     RequireJS version (the original version of this gmap proof-of-concept)
-	[more info](https://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")    
+	[more info](https://jimfrenette.com/2015/11/googlemap-requirejs/ "Blog post")
 
 ## Handlebars with Browserify
 
