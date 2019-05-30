@@ -9,13 +9,17 @@ $('html,body').animate({
 }, 1000);
 ```
 
+Install the demo using
 ```
 npm install
+```
 
+Build for development
 ```
 npm run dev
 ```
-OR
+
+Or production
 ```
 npm run build
 ```
