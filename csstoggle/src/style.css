@@ -1,0 +1,68 @@
+input#info-toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* checkbox toggles info containers */
+input#info-toggle:checked ~
+.panel-a, .panel-b {
+    height: 0;
+    opacity: 0;
+}
+input#info-toggle:checked ~
+.panel-b {
+    height: auto;
+    opacity: 1;
+}
+
+/* checkbox label */
+input#info-toggle:checked ~
+.toggle .toggle-a {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    border-right-color: #002244;
+}
+input#info-toggle:checked ~
+.toggle .toggle-b {
+    color: #fff;
+    background-color: #002244;
+    border-color: #002244;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    width: 348px;
+    margin-bottom: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toggle .toggle-a,
+.toggle .toggle-b {
+    border: 2px solid #000;
+    flex: 0 1 174px;
+    height: 50px;
+    text-align: center;
+    line-height: 46px;
+}
+
+.toggle .toggle-a {
+    color: #fff;
+    background-color: #002244;
+    border-color: #002244;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transition: .4s;
+}
+
+.toggle .toggle-b {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left-color: #002244;
+    transition: .4s;
+}
