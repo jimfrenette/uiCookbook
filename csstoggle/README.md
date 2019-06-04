@@ -2,6 +2,8 @@
 
 Paddle style CSS only (no JS) panel toggle.
 
+[demo / sandbox](https://jimfrenette.com/code-editors/sandbox/css-paddle-toggle/)
+
 Install the demo using
 ```
 npm install
