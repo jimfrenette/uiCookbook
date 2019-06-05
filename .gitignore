@@ -38,5 +38,9 @@ node_modules
 bower_components
 
 # App specific
+/csstoggle/dist
+/lory/dist
 /photogrid/dist
 /slick/dist
+/smoothscroll/dist
+
