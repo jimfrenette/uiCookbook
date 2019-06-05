@@ -2,7 +2,7 @@
 ## Install
 
 ```
-svn export https://github.com/loryjs/lory/trunk/src lory
+npm install lory.js
 ```
 
 ## [Parcel](https://parceljs.org/getting_started.html)

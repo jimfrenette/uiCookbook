@@ -1,53 +1,35 @@
-/* PREREQUISITED CSS STYLES FOR LORY.JS */
-.frame {
+.slider {
     position: relative;
+}
+
+.frame {
+    width: 100%;
+    position: relative;
+    background-color: #3399ff;
+    min-height: 100px;
     font-size: 0;
     line-height: 0;
     overflow: hidden;
     white-space: nowrap;
 }
 
-.slides {
-    display: inline-block;
-}
-
-li {
-    position: relative;
-    display: inline-block;
-}
-
-/* CUSTOM SLIDER CSS */
-.slider {
-    position: relative;
-    width: 980px;
-    margin: 0 auto 20px;
-}
-
-.frame {
-    background-color: #2E435A;
-    width: 880px;
-    height: 125px;
-    margin: 0 auto;
-}
-
-.slides {
-    text-align: center;
-}
-
 .slides .js_slide {
+    width: 100%;
+    position: relative;
+    display: inline-block;
     color: #fff;
-    width: 880px;
-    height: 125px;
-    font-size: 16px;
-    line-height: 125px;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center
 }
 
 .js_prev,
 .js_next {
     position: absolute;
     top: 50%;
-    margin-top: -10px;
-    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: -0.75rem;
     cursor: pointer;
 }
 
@@ -59,16 +41,16 @@ li {
     right: 0;
 }
 
-.slider_navigation_dots {
+/* dots */
+.dots {
     margin: 0;
     padding: 0;
     text-align: center;
-    margin-top: 10px;
     position: absolute;
     width: 100%;
 }
 
-.slider_navigation_dots li {
+.dots li {
     background-color: #eee;
     border: 1px solid #666;
     border-radius: 5px;
@@ -80,7 +62,7 @@ li {
     cursor: pointer;
 }
 
-.slider_navigation_dots li.active {
+.dots li.active {
     background-color: #41ABE5;
     box-shadow: inset 2px 0px 2px -2px #333;
 }

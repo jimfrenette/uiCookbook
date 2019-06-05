@@ -6,6 +6,8 @@
   "scripts": {
     "dev:basic": "parcel ./src/basic/basic.html",
     "build:basic": "parcel build ./src/basic/basic.html --public-url ./",
+    "dev:dots": "parcel ./src/dots/dots.html",
+    "build:dots": "parcel build ./src/dots/dots.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
