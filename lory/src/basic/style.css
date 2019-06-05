@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+}
+
+.frame {
+    width: 100%;
+    position: relative;
+    background-color: #3399ff;
+    min-height: 100px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides .js_slide {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center
+}
+
+.js_prev,
+.js_next {
+    position: absolute;
+    top: 50%;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: -0.75rem;
+    cursor: pointer;
+}
+
+.js_prev {
+    left: 0;
+}
+
+.js_next {
+    right: 0;
+}

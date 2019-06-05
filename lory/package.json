@@ -1,0 +1,21 @@
+{
+  "name": "lory2",
+  "version": "1.0.0",
+  "description": "lory slider examples",
+  "main": "index.js",
+  "scripts": {
+    "dev:basic": "parcel ./src/basic/basic.html",
+    "build:basic": "parcel build ./src/basic/basic.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6"
+  },
+  "dependencies": {
+    "lory.js": "^2.5.3"
+  }
+}

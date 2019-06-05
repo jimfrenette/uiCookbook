@@ -1,0 +1,86 @@
+/* PREREQUISITED CSS STYLES FOR LORY.JS */
+.frame {
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slides {
+    display: inline-block;
+}
+
+li {
+    position: relative;
+    display: inline-block;
+}
+
+/* CUSTOM SLIDER CSS */
+.slider {
+    position: relative;
+    width: 980px;
+    margin: 0 auto 20px;
+}
+
+.frame {
+    background-color: #2E435A;
+    width: 880px;
+    height: 125px;
+    margin: 0 auto;
+}
+
+.slides {
+    text-align: center;
+}
+
+.slides .js_slide {
+    color: #fff;
+    width: 880px;
+    height: 125px;
+    font-size: 16px;
+    line-height: 125px;
+}
+
+.js_prev,
+.js_next {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    display: block;
+    cursor: pointer;
+}
+
+.js_prev {
+    left: 0;
+}
+
+.js_next {
+    right: 0;
+}
+
+.slider_navigation_dots {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+}
+
+.slider_navigation_dots li {
+    background-color: #eee;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px #888;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider_navigation_dots li.active {
+    background-color: #41ABE5;
+    box-shadow: inset 2px 0px 2px -2px #333;
+}
