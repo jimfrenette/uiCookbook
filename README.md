@@ -2,6 +2,10 @@
 
 Here is a list of the recipies. I will try to keep these ordered by last updated.
 
+## Lory Carousel Recipies
+
+*   [/lory](/lory)
+
 ## CSS Toggle
 
 *   [/csstoggle](/csstoggle)

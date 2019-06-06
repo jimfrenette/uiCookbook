@@ -20,3 +20,18 @@ Add plugin to clean dist folder on production build
 ```
 npm install parcel-plugin-clean-dist -D
 ```
+
+## Recipies
+
+* basic
+* dots
+
+dev server & watch
+```
+npm run dev:{recipe}
+```
+
+prod build
+```
+npm run build:{recipe}
+```
