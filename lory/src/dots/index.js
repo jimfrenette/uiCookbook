@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (var i = 0, len = dots.childNodes.length; i < len; i++) {
                 dots.childNodes[i].classList.remove('active');
             }
-            dots.childNodes[evt.detail.currentSlide - 1].classList.add('active');
+            dots.childNodes[lorySlider.returnIndex()].classList.add('active');
         }
     }
 
@@ -35,6 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var lorySlider = lory(slider, {
         // infinite: 1,
-        enableMouseEvents: true,
+        enableMouseEvents: true
     });
 });
