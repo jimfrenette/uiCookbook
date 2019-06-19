@@ -25,12 +25,15 @@
 
 .js_prev,
 .js_next {
+    color: #fff;
     position: absolute;
     top: 50%;
     font-weight: bold;
     font-size: 1.5rem;
-    margin-top: -0.75rem;
+    margin-top: -1.25rem;
     cursor: pointer;
+    padding: .25rem;
+    background: rgba(0,0,0,0.15);
 }
 
 .js_prev {
@@ -51,8 +54,7 @@
 }
 
 .dots li {
-    background-color: #eee;
-    border: 1px solid #666;
+    background-color: #f2f2f2;
     border-radius: 5px;
     box-shadow: inset 1px 1px 1px #888;
     display: inline-block;
@@ -63,6 +65,9 @@
 }
 
 .dots li.active {
-    background-color: #41ABE5;
-    box-shadow: inset 2px 0px 2px -2px #333;
+    background-color: #3399ff;
+}
+
+.dots li:hover {
+    background-color: #fff;
 }
