@@ -116,6 +116,6 @@ export default class Subscribe {
     }
 }
 
-import EntryPoint from './modules/entryPoint';
+import EntryPoint from './modules/entry-point';
 
 new EntryPoint(Subscribe, '.subscribe');

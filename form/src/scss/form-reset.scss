@@ -46,14 +46,10 @@ select {
 }
 
 input {
-  &[type=date], &[type=datetime], &[type=datetime-local], &[type=email], &[type=month], &[type=number], &[type=password], &[type=range], &[type=search], &[type=tel], &[type=text], &[type=time], &[type=url], &[type=week] {}
-
   &[type=checkbox], &[type=radio] {
     width: 13px;
     height: 13px;
   }
-
-  &[type=file] {}
 
   &[type=search] {
     -webkit-appearance: textfield;
@@ -72,9 +68,6 @@ textarea {
   /* Turn off scroll bars in IE unless needed */
   overflow: auto;
 }
-
-/* Selects
------------------------------------------------*/
 
 select[multiple] {
   /* Move the label to the top */

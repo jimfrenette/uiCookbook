@@ -1,6 +1,7 @@
 @import 'form-reset.scss';
 
 body {
+  color: dimgray;
   font-family: Helvetica Neue Medium, Arial, sans-serif;
 }
 
@@ -11,6 +12,24 @@ fieldset.fields {
 
   .form-error {
     display: none;
+  }
+
+  .form-error-icon {
+    position: absolute;
+
+    &:before {
+      width: 20px;
+      height: 20px;
+      padding: 14px 9px;
+      border-radius: 10px;
+      background: none;
+      font-size: 25px;
+      color: red;
+    }
+  }
+
+  .field-container {
+    position: relative;
   }
 }
 
@@ -79,26 +98,6 @@ fieldset.fields {
 
 .compound-field ~ .form-error-icon, .enhanced-input .form-error-icon {
   opacity: 1;
-}
-
-.fields {
-  .form-error-icon {
-    position: absolute;
-
-    &:before {
-      width: 20px;
-      height: 20px;
-      padding: 14px 9px;
-      border-radius: 10px;
-      background: none;
-      font-size: 25px;
-      color: red;
-    }
-  }
-
-  .field-container {
-    position: relative;
-  }
 }
 
 .compound-field {
@@ -226,22 +225,6 @@ fieldset.fields {
   }
 }
 
-.textfield {
-  background: ghostwhite;
-  padding: 19px 7px 14px 18px;
-  border: 1px solid whitesmoke;
-  font-size: 13px;
-  margin: 0 0 14px;
-  box-sizing: border-box;
-  width: 100%;
-  border-radius: 0;
-  transition: border 0.3s, background 0.3s;
-
-  &.is-error {
-    border: 1px solid red;
-  }
-}
-
 .enhanced-input-label {
   position: absolute;
   top: 20px;
@@ -259,6 +242,44 @@ fieldset.fields {
 
   .require-text {
     text-transform: none;
+  }
+}
+
+.textfield {
+  background: ghostwhite;
+  padding: 19px 7px 14px 18px;
+  border: 1px solid whitesmoke;
+  font-size: 13px;
+  margin: 0 0 14px;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0;
+  transition: border 0.3s, background 0.3s;
+
+  &.is-error {
+    border: 1px solid red;
+  }
+}
+
+:not(.compound-field) .textfield:focus {
+  border: 1px solid black;
+  background: white;
+}
+
+.submit-button {
+  border: 1px solid limegreen;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  background: limegreen;
+  font-weight: 700;
+  color: white;
+  min-width: 220px;
+  margin: 10px auto;
+
+  &:disabled {
+    border: 1px solid gainsboro;
+    background: whitesmoke;
+    color: darkgray;
   }
 }
 
@@ -297,11 +318,10 @@ fieldset.fields {
   }
 }
 
+.form-disclaimer,
 .form-confirmation-message {
   line-height: 1.3;
   color: dimgray;
-  max-width: 310px;
-  line-height: 1.38;
   font-size: 0.8125rem;
-  margin: 0 auto;
+  margin: 10px auto;
 }

@@ -3,7 +3,6 @@
 [Blog post](https://jimfrenette.com/)
 
 
-
 ## [Parcel](https://parceljs.org/getting_started.html)
 
 Global
@@ -19,3 +18,12 @@ Add plugin to clean dist folder on production build
 ```
 npm install parcel-plugin-clean-dist -D
 ```
+
+## Forms
+
+Subscribe
+
+```
+npm run dev:subscribe
+```
+
