@@ -1,0 +1,22 @@
+{
+    "en": {
+        "required": "This field is required.",
+        "email": "Please enter a proper email.",
+        "firstName": "Please enter a proper first name.",
+        "lastName": "Please enter a proper last name.",
+        "zipcode": "Please enter a proper zipcode.",
+        "phone": "Please enter a proper phone number.",
+        "state": "Please enter a proper state.",
+        "city": "Please enter a proper city."
+    },
+    "es": {
+        "required": "Este campo es obligatorio.",
+        "email": "Por favor usa una direcci&oacute;n de correo electr&oacute;nico correcta.",
+        "firstname": "Por favor ingresa un nombre.",
+        "lastname": "Por favor ingresa un apellido.",
+        "zipcode": "Por favor ingrese un c&oacute;digo postal valido.",
+        "phone": "Por favor ingresa un n&uacute;mero de tel&eacute;fono correcto.",
+        "state": "Por favor ingresa un estado apropiado.",
+        "city": "Por favor introduzca una ciudad adecuada."
+    }
+}

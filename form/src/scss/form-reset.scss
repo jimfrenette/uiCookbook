@@ -1,0 +1,82 @@
+input, label, select, button, textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+}
+
+input {
+  &:focus {
+    outline: 0;
+  }
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input {
+  &[type=reset], &[type=button], &[type=submit], &[type=checkbox], &[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input {
+  &[type=date], &[type=datetime], &[type=datetime-local], &[type=email], &[type=month], &[type=number], &[type=password], &[type=range], &[type=search], &[type=tel], &[type=text], &[type=time], &[type=url], &[type=week] {}
+
+  &[type=checkbox], &[type=radio] {
+    width: 13px;
+    height: 13px;
+  }
+
+  &[type=file] {}
+
+  &[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+  }
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top;
+}
