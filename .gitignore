@@ -39,6 +39,7 @@ bower_components
 
 # App specific
 /csstoggle/dist
+/form/dist
 /lory/dist
 /photogrid/dist
 /slick/dist
