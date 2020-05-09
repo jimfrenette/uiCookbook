@@ -1,7 +1,4 @@
-# Form
-
-[Blog post](https://jimfrenette.com/)
-
+# Form Recipies
 
 ## [Parcel](https://parceljs.org/getting_started.html)
 
