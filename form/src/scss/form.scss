@@ -96,8 +96,13 @@ fieldset.fields {
   }
 }
 
-.compound-field ~ .form-error-icon, .enhanced-input .form-error-icon {
+.compound-field ~ .form-error-icon,
+.enhanced-input .form-error-icon {
   opacity: 1;
+}
+
+.compound-field.is-interacting-with ~ .form-error-icon {
+  opacity: 0;
 }
 
 .compound-field {
