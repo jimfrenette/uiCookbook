@@ -45,7 +45,6 @@ export default class Subscribe {
         on(this.config.el.form, 'change', 'input,textarea', (evt) => this.onInputKeyup(evt));
         on(this.config.el.form, 'paste', 'input,textarea', (evt) => this.onInputKeyup(evt));
         on(this.config.el.form, 'focusout', 'input,textarea', (evt) => this.onInputKeyup(evt));
-        on(this.config.el, 'click', '.ccpa-disclaimer', (evt) => this.disclaimerClick(evt));
     }
 
     onInputKeyup(evt) {
