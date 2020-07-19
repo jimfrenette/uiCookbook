@@ -6,6 +6,8 @@
   "scripts": {
     "dev:subscribe": "parcel ./src/subscribe.html",
     "build:subscribe": "parcel build ./src/subscribe.html --public-url ./",
+    "dev:subscribe-phone": "parcel ./src/subscribe-phone.html",
+    "build:subscribe-phone": "parcel build ./src/subscribe-phone.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

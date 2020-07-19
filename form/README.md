@@ -24,3 +24,8 @@ Subscribe
 npm run dev:subscribe
 ```
 
+Subscribe with Phone
+
+```
+npm run dev:subscribe-phone
+```

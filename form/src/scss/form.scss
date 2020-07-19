@@ -5,6 +5,11 @@ body {
   font-family: Helvetica Neue Medium, Arial, sans-serif;
 }
 
+section {
+  margin: auto;
+  max-width: 768px;
+}
+
 fieldset.fields {
   margin: 0;
   padding: 0;

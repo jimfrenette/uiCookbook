@@ -10,7 +10,7 @@
 
 	<section class="subscribe">
 
-	<h2>Email Sign Up</h2>
+	<h2>Email or Phone Sign Up</h2>
 	<form class="form form-view is-visible" autocomplete="off" novalidate>
 		<fieldset class="fields">
 			<div class="field-container name-fields">
@@ -45,6 +45,30 @@
 							class="require-text">(Required)</span></label>
 				</div>
 			</div>
+
+			<div class="field-container phone-fields">
+				<div class="compound-field two-fields">
+					<div class="enhanced-input compound-field-proxy">
+						<input value="" type="text" class="textfield" id="phoneNumber-form_id_1"
+							data-skip-validation="false" name="phoneNumber" data-validation-proxy="phone,phoneExtension"
+							data-compound-field="true" data-error-message="Error" required="" novalidate="">
+						<label class="enhanced-input-label" for="phoneNumber-form_id_1">Phone
+							<span class="require-text is-hidden">(Required)</span>
+						</label>
+					</div>
+					<div class="enhanced-input">
+						<input value="" type="tel" class="textfield" id="phone-form_id_1"
+							data-skip-validation="true" name="phone" data-validators="phone">
+						<label class="enhanced-input-label" for="phone-form_id_1">Phone</label>
+					</div>
+					<div class="enhanced-input">
+						<input value="" type="text" class="textfield" id="phoneExt-form_id_1"
+							data-skip-validation="true" name="phoneExt" data-validators="phone_ext" maxlength="6">
+						<label class="enhanced-input-label" for="phoneExt-form_id_1">Extension</label>
+					</div>
+				</div>
+			</div>
+
 		</fieldset>
 
 		<div class="buttons">
@@ -73,7 +97,7 @@
 	</div>
 	</section>
 
-	<script src="subscribe.js"></script>
+	<script src="subscribe-phone.js"></script>
 </body>
 
 </html>
