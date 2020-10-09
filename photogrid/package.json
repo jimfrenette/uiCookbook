@@ -22,7 +22,7 @@
     "babel-preset-env": "^1.7.0",
     "css-loader": "^1.0.0",
     "mini-css-extract-plugin": "^0.4.1",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.1",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "postcss-loader": "^2.1.6",
     "resolve-url-loader": "^2.3.0",
