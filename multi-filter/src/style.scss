@@ -20,13 +20,6 @@
     flex-wrap: wrap;
     background-color: bisque;
 
-    &[class*='year--'],
-    &[class*='make--'] {
-        li {
-            display: none;
-        }
-    }
-
     li {
         display: block;
         padding: 20px;
@@ -36,12 +29,8 @@
     }
 }
 
-/*
-.cars.year--1969 > [data-year='1969'],
-.cars.year--1970 > [data-year='1970'],
-.cars.make--chevy > [data-make='chevy'],
-.cars.make--dodge > [data-make='dodge'],
-.cars.make--ford > [data-make='ford'] {
-    display: block;
+.cars.filtered {
+    li:not(.selected) {
+        display: none;
+    }
 }
-*/
