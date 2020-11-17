@@ -15,3 +15,11 @@ Add plugin to clean dist folder on production build
 ```
 npm install parcel-plugin-clean-dist -D
 ```
+
+### Run
+
+```
+cd multi-filter
+
+parcel src/index.html
+```
