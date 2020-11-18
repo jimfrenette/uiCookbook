@@ -41,6 +41,10 @@ import './style.scss'
         }
     }
 
+    function inRange(num, range) {
+        return (num >= range.split('-')[0] && num <= range.split('-')[1]);
+    }
+
     function matches(key, value) {
         var count = 0;
         Array.from(el.items).forEach(item => {
@@ -52,6 +56,11 @@ import './style.scss'
                     break;
                 case 'model':
                     if (item.dataset.model === value) {
+                        count ++;
+                    }
+                    break;
+                case 'price':
+                    if (inRange(item.dataset.price, value)) {
                         count ++;
                     }
                     break;
@@ -69,6 +78,7 @@ import './style.scss'
         var match = {
             "make": [],
             "model": [],
+            "price": [],
             "year": []
         };
         Array.from(el.filtersList).forEach(input => {
@@ -79,6 +89,9 @@ import './style.scss'
                     break;
                 case 'model':
                     match.model.push(item.dataset.model === input.value);
+                    break;
+                case 'price':
+                    match.price.push(inRange(item.dataset.price, input.value));
                     break;
                 case 'year':
                     match.year.push(item.dataset.year === input.value);
@@ -131,6 +144,12 @@ import './style.scss'
 
             if (result.model.length) {
                 if (result.model.includes(true)) {
+                    matches.push(true);
+                } else { matches.push(false); }
+            }
+
+            if (result.price.length) {
+                if (result.price.includes(true)) {
                     matches.push(true);
                 } else { matches.push(false); }
             }
