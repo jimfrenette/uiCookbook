@@ -7,7 +7,10 @@ import './style.scss'
     function sortStr(param) {
         var sorted;
         const items = Array.from(el.items, function(item) {
-            return { str: `${item.dataset.make}-${item.dataset.model}`, li: item }
+            return {
+                str: `${item.dataset.year}-${item.dataset.make}-${item.dataset.model}`,
+                li: item
+            }
         });
         if (param == 'z-a') {
             sorted = items.sort((a, b) => a.str < b.str ? 1 : -1);
@@ -17,16 +20,21 @@ import './style.scss'
         sorted.forEach((obj) => el.list.appendChild(obj.li));
     }
 
-    function sortYear() {
+    function sortPrice(param) {
         Array.from(el.items).sort(function(a, b) {
-            return a.dataset.year - b.dataset.year;
+            if (param == '9-1') {
+                return b.dataset.price - a.dataset.price;
+            } else {
+                return a.dataset.price - b.dataset.price;
+            }
         }).forEach((li) => el.list.appendChild(li));
     }
 
     function onSortChange(select) {
         switch(select.value) {
             case '1-9':
-                sortYear();
+            case '9-1':
+                sortPrice(select.value);
                 break;
             default:
                 sortStr(select.value);
