@@ -4,6 +4,35 @@ import './style.scss'
 
     var el = {};
 
+    function sortStr(param) {
+        var sorted;
+        const items = Array.from(el.items, function(item) {
+            return { str: `${item.dataset.make}-${item.dataset.model}`, li: item }
+        });
+        if (param == 'z-a') {
+            sorted = items.sort((a, b) => a.str < b.str ? 1 : -1);
+        } else {
+            sorted = items.sort((a, b) => a.str > b.str ? 1 : -1);
+        }
+        sorted.forEach((obj) => el.list.appendChild(obj.li));
+    }
+
+    function sortYear() {
+        Array.from(el.items).sort(function(a, b) {
+            return a.dataset.year - b.dataset.year;
+        }).forEach((li) => el.list.appendChild(li));
+    }
+
+    function onSortChange(select) {
+        switch(select.value) {
+            case '1-9':
+                sortYear();
+                break;
+            default:
+                sortStr(select.value);
+        }
+    }
+
     function matches(key, value) {
         var count = 0;
         Array.from(el.items).forEach(item => {
@@ -120,6 +149,7 @@ import './style.scss'
     }
 
     function onDocumentReady() {
+        el.sort = document.querySelector('.sort select');
         el.filters = document.querySelector('.filters');
         el.filtersList = el.filters.querySelectorAll('input');
         el.list = document.querySelector('ul.cars');
@@ -133,6 +163,11 @@ import './style.scss'
                 onFilterChange(event.target);
             });
         });
+
+        el.sort.addEventListener('change', (event) => {
+            onSortChange(event.target);
+        });
+
     }
 
     if (document.readyState !== "loading") {
