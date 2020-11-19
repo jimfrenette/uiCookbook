@@ -101,41 +101,17 @@ import './style.scss'
         return match;
     }
 
-    function isFilter() {
-        var filter = false;
-        /**
-         * some returns true as soon as any of the callbacks return true,
-         * short-circuiting the execution of the rest. e.g., break;
-         */
-        Array.from(el.filtersList).some(input => {
-            if (input.checked) {
-                filter = true;
-            }
-        });
-        return filter;
+    function renderCount(count) {
+        el.heading.innerHTML = `${count} Matches`;
     }
 
-    function onFilterChange(input) {
-        var filtered = false;
-        if (input.checked) {
-            filtered = true;
-        } else {
-            filtered = isFilter();
-        }
-
-        if (filtered) {
-            el.list.classList.add('filtered');
-        } else {
-            el.list.classList.remove('filtered');
-        }
-
+    function applyFilter() {
         Array.from(el.items).forEach(item => {
             var result = match(item),
                 matches = [];
             item.classList.remove('selected');
 
             // console.log(result);
-
             if (result.make.length) {
                 if (result.make.includes(true)) {
                     matches.push(true);
@@ -171,16 +147,50 @@ import './style.scss'
             } else {
                 item.classList.remove('selected');
             }
-
         });
     }
 
+    function isFilter() {
+        var filter = false;
+        /**
+         * some returns true as soon as any of the callbacks return true,
+         * short-circuiting the execution of the rest. e.g., break;
+         */
+        Array.from(el.filtersList).some(input => {
+            if (input.checked) {
+                filter = true;
+            }
+        });
+        return filter;
+    }
+
+    function onFilterChange(input) {
+        var filtered = false;
+        if (input.checked) {
+            filtered = true;
+        } else {
+            filtered = isFilter();
+        }
+
+        if (filtered) {
+            el.list.classList.add('filtered');
+            applyFilter();
+        } else {
+            el.list.classList.remove('filtered');
+            // render total count
+        }
+    }
+
     function onDocumentReady() {
+        el.heading = document.querySelector('.cars-heading');
         el.sort = document.querySelector('.sort select');
         el.filters = document.querySelector('.filters');
         el.filtersList = el.filters.querySelectorAll('input');
         el.list = document.querySelector('ul.cars');
         el.items = el.list.querySelectorAll('li');
+        el.itemsCount = el.items.length;
+
+        renderCount(el.itemsCount);
 
         Array.from(el.filtersList).forEach(input => {
             // add match count to the label
@@ -194,7 +204,6 @@ import './style.scss'
         el.sort.addEventListener('change', (event) => {
             onSortChange(event.target);
         });
-
     }
 
     if (document.readyState !== "loading") {
