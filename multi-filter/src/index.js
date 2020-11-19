@@ -132,7 +132,7 @@ import './style.scss'
 
             if (result.year.length) {
                 if (result.year.includes(true)) {
-                matches.push(true);
+                    matches.push(true);
                 } else { matches.push(false); }
             }
 
@@ -148,6 +148,8 @@ import './style.scss'
                 item.classList.remove('selected');
             }
         });
+
+        renderCount(el.list.querySelectorAll('.selected').length);
     }
 
     function isFilter() {
@@ -175,9 +177,10 @@ import './style.scss'
         if (filtered) {
             el.list.classList.add('filtered');
             applyFilter();
+
         } else {
             el.list.classList.remove('filtered');
-            // render total count
+            renderCount(el.items.length);
         }
     }
 
@@ -188,9 +191,8 @@ import './style.scss'
         el.filtersList = el.filters.querySelectorAll('input');
         el.list = document.querySelector('ul.cars');
         el.items = el.list.querySelectorAll('li');
-        el.itemsCount = el.items.length;
 
-        renderCount(el.itemsCount);
+        renderCount(el.items.length);
 
         Array.from(el.filtersList).forEach(input => {
             // add match count to the label
