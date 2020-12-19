@@ -4,17 +4,25 @@ import './style.scss'
 
     var el = {};
 
+    function init() {
+
+        Array.from(el.inputs).forEach(input => {
+
+            var output = input.closest("div").querySelector('.output');
+            output.innerHTML = input.value; // Render default slider value
+
+            // Update current slider value
+            input.oninput = function() {
+              output.innerHTML = this.value;
+            }
+
+        });
+    }
+
     function onDocumentReady() {
-        el.input = document.querySelector('input.range-slider');
-        el.wrapper = el.input.closest("div");
-        el.output = el.wrapper.querySelector('.output');
+        el.inputs = document.querySelectorAll('input.range-slider');
 
-        el.output.innerHTML = el.input.value; // Render default slider value
-
-        // Update current slider value
-        el.input.oninput = function() {
-          el.output.innerHTML = this.value;
-        }
+        init();
     }
 
     if (document.readyState !== "loading") {
