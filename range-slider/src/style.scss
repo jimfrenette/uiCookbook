@@ -1,0 +1,48 @@
+.cars-heading {
+    text-align: center;
+}
+
+.sort {
+    float: right;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 0 10px 10px;
+        display: block;
+        white-space: nowrap;
+
+        &:hover {
+            background: #eee;
+            cursor: pointer;
+        }
+    }
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 20px 0 0 20px;
+
+    li {
+        width: 175px;
+        display: block;
+        padding: 20px;
+        background-color: white;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.cars.filtered {
+    li:not(.selected) {
+        display: none;
+    }
+}
