@@ -1,4 +1,6 @@
-import './style.scss'
+import noUiSlider from 'nouislider';
+import 'nouislider/distribute/nouislider.css';
+import './style.scss';
 
 (function() {
 
@@ -17,6 +19,18 @@ import './style.scss'
             }
 
         });
+
+		var slider = document.querySelector('.range-slider-noui');
+
+		noUiSlider.create(slider, {
+			start: [20, 80],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 100
+			}
+		});
+
     }
 
     function onDocumentReady() {
