@@ -7,12 +7,12 @@ A modern Webpack boilerplate for JS and Scss
 npm i
 ```
 
-Dev build and serve
+Dev build w/ watch and dev server
 ```
-npm run start
+npm run watch
 ```
 
-Dev build
+Dev build w/ dev server
 ```
 npm run dev
 ```
@@ -20,4 +20,9 @@ npm run dev
 Optimized build
 ```
 npm run build
+```
+
+Optimized build stats
+```
+npm run stats
 ```

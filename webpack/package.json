@@ -11,9 +11,8 @@
   "scripts": {
     "build": "webpack --config config/webpack.dev.config.js --mode=development",
     "watch": "webpack --config config/webpack.dev.config.js --mode=development --watch",
-    "bundle": "npm install && npm run watch",
     "dev": "webpack serve --config config/webpack.dev.config.js --mode=development",
-    "production": "webpack --config config/webpack.prod.config.js --mode=production",
+    "prod": "webpack --config config/webpack.prod.config.js --mode=production",
     "stats": "webpack --config config/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
   },
   "target": "web",
