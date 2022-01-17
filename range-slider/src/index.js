@@ -1,5 +1,5 @@
 import noUiSlider from 'nouislider';
-import 'nouislider/distribute/nouislider.css';
+import 'nouislider/dist/nouislider.css';
 import './style.scss';
 
 (function() {

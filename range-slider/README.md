@@ -1,29 +1,16 @@
 # Range Slider
 
-### [Parcel](https://parceljs.org/getting_started.html)
+### Install
 
-Global
 ```
-npm install -g parcel-bundler
-```
-Or in the local project `node_modules`
-```
-npm install parcel-bundler -D
+npm i
 ```
 
-Add plugin to clean dist folder on production build
-```
-npm install parcel-plugin-clean-dist -D
-```
+> [Parcel](https://parceljs.org/getting_started.html)
 
 ### Run
 
-Change to the component project root folder, e.g.,
-```
-cd range-slider
-```
-
-Then build using either ...
+Build using either ...
 ```
 npm run dev
 ```

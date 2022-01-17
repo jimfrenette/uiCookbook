@@ -1,8 +1,5 @@
 import style from './scss/form.scss';
 
-// for async/await browser support
-import 'babel-polyfill';
-
 import {on} from './modules/dom-helpers';
 import CompoundField from './modules/compound-field';
 import FormValidation from './modules/validation';

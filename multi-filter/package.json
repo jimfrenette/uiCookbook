@@ -1,17 +1,18 @@
 {
   "name": "multi-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-clean-dist": "0.0.6",
+    "@parcel/transformer-sass": "^2.2.0",
+    "parcel": "^2.0.0",
     "sass": "^1.29.0"
   }
 }
