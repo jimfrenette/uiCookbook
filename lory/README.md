@@ -10,6 +10,7 @@ npm i
 
 * basic
 * dots
+* picture
 
 dev server & watch
 ```
