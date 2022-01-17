@@ -33,6 +33,7 @@ nbproject
 .vscode
 
 # Folders to ignore
+.parcel-cache
 .sass-cache
 node_modules
 bower_components
@@ -44,4 +45,3 @@ bower_components
 /photogrid/dist
 /slick/dist
 /smoothscroll/dist
-
