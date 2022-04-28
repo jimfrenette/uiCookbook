@@ -3,6 +3,10 @@
 Here is a list of the recipes. I will try to keep these ordered by last
 updated.
 
+## Custom Scrollbar
+
+*   [/scrollbar](/scrollbar)
+
 ## Range Slider
 
 *   [/range-slider](/range-slider)

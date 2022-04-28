@@ -1,0 +1,20 @@
+{
+  "name": "scrollbar",
+  "version": "1.0.0",
+  "description": "scrollbar examples",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev:basic": "parcel ./src/basic/index.html",
+    "build:basic": "parcel build ./src/basic/index.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  },
+  "dependencies": {
+    "simplebar": "^5.3.6"
+  }
+}

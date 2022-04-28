@@ -1,0 +1,10 @@
+@import '../../node_modules/simplebar/dist/simplebar.css';
+
+.custom-scrollbar {
+    /* overflow-x: scroll; */
+}
+
+.custom-scrollbar .wrapper {
+    display: flex;
+}
+

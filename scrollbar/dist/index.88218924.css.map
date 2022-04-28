@@ -1,0 +1,1 @@
+{"mappings":"ACIA","sources":["index.88218924.css","src/basic/style.css"],"sourcesContent":[".custom-scrollbar .wrapper {\n  display: flex;\n}\n\n/*# sourceMappingURL=index.88218924.css.map */\n",".custom-scrollbar {\n    /* overflow-x: scroll; */\n}\n\n.custom-scrollbar .wrapper {\n    display: flex;\n}\n\n"],"names":[],"version":3,"file":"index.88218924.css.map"}

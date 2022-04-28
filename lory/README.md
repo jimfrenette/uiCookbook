@@ -6,7 +6,7 @@ npm i
 ```
 [build tool](https://parceljs.org)
 
-## Recipies
+## Recipes
 
 * basic
 * dots
