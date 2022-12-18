@@ -1,0 +1,27 @@
+.header, footer {
+    min-height: 100px;
+}
+
+.video-scroll {
+    position: relative;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.video-scroll__video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.video-scroll-spacer {
+    height: 10000px; // base scroll y length, controls speed
+}
+
+.assets-wrapper {
+    position: sticky;
+    top: 0;
+}
