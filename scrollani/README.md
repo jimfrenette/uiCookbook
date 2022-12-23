@@ -1,4 +1,3 @@
-# Video Examples
 
 ## Install
 
@@ -9,6 +8,7 @@ npm i
 
 ## Recipes
 
+* basic
 * scroll
 
 dev server & watch

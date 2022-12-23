@@ -1,0 +1,18 @@
+{
+  "name": "scrollani",
+  "version": "1.0.0",
+  "description": "Scroll animation",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "dev:d1": "parcel ./src/d1/index.html",
+    "build:d1": "parcel build ./src/d1/index.html --public-url ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2"
+  }
+}
